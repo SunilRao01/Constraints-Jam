@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
 	{
-		// Retrive relevant vairables
+		// Retrive relevant variables
 		rigidbody = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () 
+	void Update () 
 	{
 		Vector2 movementDirection = new Vector2();
 		movementDirection.x = Input.GetAxisRaw("Horizontal");
