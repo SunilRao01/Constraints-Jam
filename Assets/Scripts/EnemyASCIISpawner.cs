@@ -32,7 +32,7 @@ public class EnemyASCIISpawner : MonoBehaviour
 			GameObject ascii = (GameObject) Instantiate(asciiPrefab, transform.position, Quaternion.identity);
 			string possibleCharacters = "qwertyuiopasdfghjkl;zxcvbnm,.!@#$$%^&*()-+=";
 			ascii.GetComponent<Text>().text = "" + possibleCharacters[Random.Range(0, possibleCharacters.Length-1)]; 
-			ascii.transform.parent = asciiParent.transform;
+			ascii.transform.SetParent(asciiParent.transform);
 			ascii.transform.localScale = new Vector3(1, 1, 1);
 
 			// Add force
