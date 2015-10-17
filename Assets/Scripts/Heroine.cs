@@ -12,9 +12,6 @@ public class Heroine : MonoBehaviour
 	void Start () 
 	{
 		shooter = transform.GetChild(1).gameObject;
-
-		// TEST: look target is player
-		lookTarget = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 	
 	// Update is called once per frame
@@ -39,7 +36,7 @@ public class Heroine : MonoBehaviour
 			lookTarget = other.transform;
 
 			GameObject bullet = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(0).position, Quaternion.identity);
-			bullet.transform.up = lookTarget.position;
+			bullet.GetComponent<HeroineBullet>().target = lookTarget;
 
 			Vector2 bulletForceDirection = lookTarget.position - bullet.transform.position;
 			bulletForceDirection *= bulletForce;
