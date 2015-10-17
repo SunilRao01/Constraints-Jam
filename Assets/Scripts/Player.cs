@@ -58,6 +58,11 @@ public class Player : MonoBehaviour
 	{
 		health--;
 
+		if (health <= 0)
+		{
+			Application.LoadLevel("GameOver");
+		}
+
 		// Set relevant variables
 		healthLabel.text = health.ToString();
 
