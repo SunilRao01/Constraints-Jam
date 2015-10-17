@@ -8,6 +8,9 @@ public class Heroine : MonoBehaviour
 	public GameObject bulletPrefab;
 	public float bulletForce;
 
+	private bool waiting;
+	public float shootingInterval;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,6 +26,13 @@ public class Heroine : MonoBehaviour
 		}
 	}
 
+	IEnumerator waitBeforeShooting()
+	{
+		waiting = true;
+		yield return new WaitForSeconds(shootingInterval);
+		waiting = false;
+	}
+
 	public void resetAimer()
 	{
 		lookTarget.position = new Vector2(0, 1);
@@ -30,7 +40,7 @@ public class Heroine : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("Enemy"))
+		if (other.CompareTag("Enemy") && !waiting)
 		{
 			// TODO: Look at enemy, shoot bullet (that will hit), unfocus enemy
 			lookTarget = other.transform;
@@ -41,6 +51,8 @@ public class Heroine : MonoBehaviour
 			Vector2 bulletForceDirection = lookTarget.position - bullet.transform.position;
 			bulletForceDirection *= bulletForce;
 			bullet.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection);
+
+			StartCoroutine(waitBeforeShooting());
 		}
 	}
 }

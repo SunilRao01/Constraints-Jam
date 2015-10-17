@@ -14,8 +14,6 @@ public class RealTimeLines : MonoBehaviour
 	void Start () 
 	{
 		vertexList.Add(transform.position);
-		
-		//StartCoroutine(waitThenVertex());
 	}
 	
 	void Update()
