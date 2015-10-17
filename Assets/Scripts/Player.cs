@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour 
 {
@@ -8,8 +9,6 @@ public class Player : MonoBehaviour
 	public float movementForce;
 	public float maximumVelocity;
 	public float jumpForce;
-	//public float jumpingMultiplier;
-	//public float jumpingGravity;
 
 	private Rigidbody2D rigidbody;
 	private bool onAxis;
@@ -18,8 +17,9 @@ public class Player : MonoBehaviour
 	public float healingInterval;
 
 	[Header("Player Stats")]
-	public int health = 5;
 	public Text healthLabel;
+	public List<GameObject> hearts;
+	private int heartIndex;
 
 	private bool rotate;
 	private Vector3 rotationDirection;
@@ -34,8 +34,7 @@ public class Player : MonoBehaviour
 		// Retrive relevant variables
 		rigidbody = GetComponent<Rigidbody2D>();
 
-		// Set relevant variables
-		healthLabel.text = health.ToString();
+		heartIndex = hearts.Count;
 	}
 	
 	// Update is called once per frame
@@ -67,15 +66,17 @@ public class Player : MonoBehaviour
 
 	void damage()
 	{
-		health--;
+		heartIndex--;
 
-		if (health <= 0)
+		if (heartIndex == 0)
 		{
 			Application.LoadLevel("GameOver");
 		}
 
-		// Set relevant variables
-		healthLabel.text = health.ToString();
+		Color newLineColor = hearts[heartIndex].GetComponent<Wireframe>().lineColor;
+		newLineColor.a = 0;
+		hearts[heartIndex].GetComponent<Wireframe>().lineColor = newLineColor;
+		
 
 		if (!healing)
 		{
@@ -87,11 +88,25 @@ public class Player : MonoBehaviour
 	{
 		healing = true;
 
-		while (health < 5)
+		while (heartIndex < hearts.Count)
 		{
 			yield return new WaitForSeconds(healingInterval);
-			health++;
-			healthLabel.text = health.ToString();
+
+			if (hearts[heartIndex])
+			{
+				Color newLineColor = hearts[heartIndex].GetComponent<Wireframe>().lineColor;
+				newLineColor.a += 0.05f;
+				hearts[heartIndex].GetComponent<Wireframe>().lineColor = newLineColor;
+
+				if (hearts[heartIndex].GetComponent<Wireframe>().lineColor.a >= 1)
+				{
+					heartIndex++;
+				}
+			}
+			else
+			{
+				Application.LoadLevel("GameOver");
+			}
 		}
 
 		healing = false;
