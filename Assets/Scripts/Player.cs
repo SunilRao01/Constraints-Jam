@@ -21,7 +21,12 @@ public class Player : MonoBehaviour
 	public int health = 5;
 	public Text healthLabel;
 
+	private bool rotate;
+	private Vector3 rotationDirection;
+	public float rotationSpeed;
+
 	// TODO: Fix player janky ass jumping
+	// TODO: Animate jumping (utilize wireframe-ness)
 
 	// Use this for initialization
 	void Awake () 
@@ -49,8 +54,14 @@ public class Player : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && onAxis)
 		{
+			Debug.Log("Apparently you're jumping.");
 			movementDirection.y += jumpForce;
 			rigidbody.AddForce(movementDirection);
+		}
+
+		if (rotate)
+		{
+			transform.Rotate(rotationDirection * rotationSpeed);
 		}
 	}
 
@@ -91,6 +102,7 @@ public class Player : MonoBehaviour
 		if (other.gameObject.name == "PlayerMovementAxis")
 		{
 			onAxis = true;
+			rotate = false;
 		}
 
 		if (other.CompareTag("Enemy"))
@@ -106,6 +118,8 @@ public class Player : MonoBehaviour
 		if (other.gameObject.name == "PlayerMovementAxis")
 		{
 			onAxis = false;
+			rotationDirection = new Vector3(Random.Range(0, 5), Random.Range(0, 5), Random.Range(0, 5));
+			rotate = true;
 		}
 	}
 }

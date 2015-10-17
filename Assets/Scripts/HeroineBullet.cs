@@ -3,7 +3,6 @@ using System.Collections;
 
 public class HeroineBullet : MonoBehaviour 
 {
-	// TODO: Set up bullet so it is always facing target, even if it misses
 	public Transform target;
 
 	// Use this for initialization

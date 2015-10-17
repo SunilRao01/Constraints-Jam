@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6134344}
   - 50: {fileID: 5034344}
   - 114: {fileID: 11495158}
+  - 114: {fileID: 11400588}
   m_Layer: 5
   m_Name: ASCIIPrefab
   m_TagString: Enemy
@@ -46,6 +47,30 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 26.7299995, y: 25.8999996}
   m_Center: {x: 1.13999999, y: 1.03999996}
+--- !u!114 &11400588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e10c637d0ca3c468b8a57b3f90accc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendColors:
+  - {r: 1, g: .389705896, b: .389705896, a: 1}
+  - {r: 1, g: .617647052, b: .617647052, a: 1}
+  - {r: .992697835, g: .470588207, b: 1, a: 1}
+  colorChangeRate: .5
+  randomColors: 0
+  customAlpha: 0
+  customAlphaValue: 0
+  isText: 1
+  isImage: 0
+  isMaterial: 0
+  enableBlend: 0
+  sequential: 1
 --- !u!114 &11434344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,7 +85,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ecb01c9ce7df92c41b4b298a6417664f, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -97,7 +122,7 @@ RectTransform:
   m_GameObject: {fileID: 134344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.64071107, y: 1.64071143, z: 1.64071143}
+  m_LocalScale: {x: 1.20597589, y: 1.20597613, z: 1.20597613}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
