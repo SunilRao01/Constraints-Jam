@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Player : MonoBehaviour 
@@ -13,6 +14,13 @@ public class Player : MonoBehaviour
 	private Rigidbody2D rigidbody;
 	private bool onAxis;
 
+	private bool healing;
+	public float healingInterval;
+
+	[Header("Player Stats")]
+	public int health = 5;
+	public Text healthLabel;
+
 	// TODO: Fix player janky ass jumping
 
 	// Use this for initialization
@@ -20,6 +28,9 @@ public class Player : MonoBehaviour
 	{
 		// Retrive relevant variables
 		rigidbody = GetComponent<Rigidbody2D>();
+
+		// Set relevant variables
+		healthLabel.text = health.ToString();
 	}
 	
 	// Update is called once per frame
@@ -38,21 +49,50 @@ public class Player : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && onAxis)
 		{
-			movementDirection.y = jumpForce;
+			movementDirection.y += jumpForce;
 			rigidbody.AddForce(movementDirection);
 		}
 	}
 
+	void damage()
+	{
+		health--;
+
+		// Set relevant variables
+		healthLabel.text = health.ToString();
+
+		if (!healing)
+		{
+			StartCoroutine(healingHeart());
+		}
+	}
+
+	IEnumerator healingHeart()
+	{
+		healing = true;
+
+		while (health < 5)
+		{
+			yield return new WaitForSeconds(healingInterval);
+			health++;
+			healthLabel.text = health.ToString();
+		}
+
+		healing = false;
+	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.gameObject.name == "PlayerMovementAxis")
 		{
 			onAxis = true;
+		}
 
-			//Vector2 newVelocity = rigidbody.velocity;
-			//newVelocity.y = 0;
-			//rigidbody.velocity = newVelocity;
+		if (other.CompareTag("Enemy"))
+		{
+			damage();
+
+			Destroy(other.gameObject);
 		}
 	}
 

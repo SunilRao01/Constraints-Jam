@@ -33,9 +33,13 @@ public class EnemyASCIISpawner : MonoBehaviour
 			string possibleCharacters = "qwertyuiopasdfghjkl;zxcvbnm,.!@#$$%^&*()-+=";
 			ascii.GetComponent<Text>().text = "" + possibleCharacters[Random.Range(0, possibleCharacters.Length-1)]; 
 			ascii.transform.parent = asciiParent.transform;
-			Vector2 asciiShootPosition = new Vector2(Random.Range(-90, 90), 0);
 			ascii.transform.localScale = new Vector3(1, 1, 1);
-			ascii.GetComponent<Rigidbody2D>().AddForce(-Vector2.up * asciiForce);
+
+			// Add force
+			Vector3 asciiShootPosition = new Vector3(Random.Range(-45, 45), -25, 0);
+			asciiShootPosition.Normalize();
+			asciiShootPosition *= asciiForce;
+			ascii.GetComponent<Rigidbody2D>().AddForce(asciiShootPosition);
 		}
 	}
 }
