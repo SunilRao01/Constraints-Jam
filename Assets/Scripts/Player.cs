@@ -26,9 +26,7 @@ public class Player : MonoBehaviour
 	public float rotationSpeed;
 
 	// TODO: Fix player janky ass jumping
-	// TODO: Animate jumping (utilize wireframe-ness)
 
-	// Use this for initialization
 	void Awake () 
 	{
 		// Retrive relevant variables
@@ -37,7 +35,6 @@ public class Player : MonoBehaviour
 		heartIndex = hearts.Count;
 	}
 	
-	// Update is called once per frame
 	void Update () 
 	{
 		Vector2 movementDirection = new Vector2();
@@ -95,7 +92,7 @@ public class Player : MonoBehaviour
 			if (hearts[heartIndex])
 			{
 				Color newLineColor = hearts[heartIndex].GetComponent<Wireframe>().lineColor;
-				newLineColor.a += 0.05f;
+				newLineColor.a += 0.08f;
 				hearts[heartIndex].GetComponent<Wireframe>().lineColor = newLineColor;
 
 				if (hearts[heartIndex].GetComponent<Wireframe>().lineColor.a >= 1)

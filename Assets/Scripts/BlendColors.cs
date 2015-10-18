@@ -19,15 +19,18 @@ public class BlendColors : MonoBehaviour
 	public float customAlphaValue;
 
 	public bool isText;
+	public bool isGuiText;
 	public bool isImage;
 	public bool isMaterial;
 
-	private float introDelay;
+	public float introDelay;
 	public bool enableBlend;
 
 	public bool sequential;
 	private int sequenceCount;
+	public bool customStart;
 
+	public bool startRandomColors;
 
 	public BlendColors()
 	{
@@ -41,7 +44,7 @@ public class BlendColors : MonoBehaviour
 
 	void Awake () 
 	{
-		if (!isText && !isImage)
+		if (!isText && !isImage && !isGuiText)
 		{
 			spriteRenderer = GetComponent<SpriteRenderer>();
 			currentColor = spriteRenderer.color;
@@ -58,6 +61,10 @@ public class BlendColors : MonoBehaviour
 		{
 			currentColor = GetComponent<Renderer>().material.color;
 		}
+		else if (isGuiText)
+		{
+			currentColor = GetComponent<GUIText>().color;
+		}
 
 		if (gameObject.tag == "Block")
 		{
@@ -65,10 +72,19 @@ public class BlendColors : MonoBehaviour
 		}
 
 		enableBlend = false;
+
+		if (!customStart)
+		{
+			startBlend();
+		}
+	}
+
+	public void startBlend()
+	{
 		StartCoroutine(delay());
 	}
 
-	IEnumerator delay()
+	public IEnumerator delay()
 	{
 		yield return new WaitForSeconds(introDelay);
 		enableBlend = true;
@@ -133,6 +149,10 @@ public class BlendColors : MonoBehaviour
 			{
 				currentColor = GetComponent<Text>().color;
 			}
+			else if (isGuiText)
+			{
+				currentColor = GetComponent<GUIText>().color;
+			}
 			else
 			{
 				currentColor = spriteRenderer.color;
@@ -147,6 +167,10 @@ public class BlendColors : MonoBehaviour
 		else if (isImage)
 		{
 			GetComponent<Image>().color = Color.Lerp(currentColor, newColor, colorCount);
+		}
+		else if (isGuiText)
+		{
+			GetComponent<GUIText>().color = Color.Lerp(currentColor, newColor, colorCount);
 		}
 		else
 		{

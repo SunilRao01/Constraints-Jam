@@ -5,8 +5,7 @@ using System.Collections.Generic;
 public class RealTimeLines : MonoBehaviour 
 {
 	public List<Vector3> vertexList;
-	public float lineDrawDelay;
-	
+
 	private int deleteCounter;
 	public int deleteTime;
 	public Color lineColor;
@@ -14,17 +13,7 @@ public class RealTimeLines : MonoBehaviour
 	void Start () 
 	{
 		vertexList.Add(transform.position);
-	}
-	
-	void Update()
-	{
-		vertexList.Add(transform.position);
-		
-		deleteCounter++;
-		if (deleteCounter % deleteTime == 0)
-		{
-			vertexList.RemoveAt(0);
-		}
+		StartCoroutine(drawLines());
 	}
 
 	public void deleteLines()
@@ -44,5 +33,20 @@ public class RealTimeLines : MonoBehaviour
 			}
 		}
 		GL.End();
+	}
+
+	IEnumerator drawLines()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(0.1f);
+			vertexList.Add(transform.position);
+
+			deleteCounter++;
+			if (deleteCounter % deleteTime == 0)
+			{
+				vertexList.RemoveAt(0);
+			}
+		}
 	}
 }

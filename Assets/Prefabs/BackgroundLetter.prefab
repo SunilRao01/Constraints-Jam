@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444494}
   - 132: {fileID: 13244494}
+  - 114: {fileID: 11466194}
   m_Layer: 0
   m_Name: BackgroundLetter
   m_TagString: Untagged
@@ -23,11 +24,39 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11466194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e10c637d0ca3c468b8a57b3f90accc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendColors:
+  - {r: .477941155, g: .697565854, b: 1, a: 1}
+  - {r: .448529422, g: 1, b: .977180421, a: 1}
+  - {r: .485294104, g: 1, b: .574036539, a: 1}
+  colorChangeRate: .00999999978
+  randomColors: 0
+  customAlpha: 1
+  customAlphaValue: .300000012
+  isText: 0
+  isGuiText: 1
+  isImage: 0
+  isMaterial: 0
+  introDelay: .200000003
+  enableBlend: 0
+  sequential: 1
+  customStart: 1
+  startRandomColors: 0
 --- !u!132 &13244494
 GUIText:
   m_ObjectHideFlags: 1
@@ -44,7 +73,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 54ffc9a9155fc0b44a6785fb9e6dfab6, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 16
+  m_FontSize: 64
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
