@@ -22,6 +22,7 @@ public class BlendColors : MonoBehaviour
 	public bool isGuiText;
 	public bool isImage;
 	public bool isMaterial;
+	public bool isLine;
 
 	public float introDelay;
 	public bool enableBlend;
@@ -44,7 +45,7 @@ public class BlendColors : MonoBehaviour
 
 	void Awake () 
 	{
-		if (!isText && !isImage && !isGuiText)
+		if (!isText && !isImage && !isGuiText && !isLine)
 		{
 			spriteRenderer = GetComponent<SpriteRenderer>();
 			currentColor = spriteRenderer.color;
@@ -64,6 +65,10 @@ public class BlendColors : MonoBehaviour
 		else if (isGuiText)
 		{
 			currentColor = GetComponent<GUIText>().color;
+		}
+		else if (isLine)
+		{
+			currentColor = GetComponent<RealTimeLines>().lineColor;
 		}
 
 		if (gameObject.tag == "Block")
@@ -153,6 +158,10 @@ public class BlendColors : MonoBehaviour
 			{
 				currentColor = GetComponent<GUIText>().color;
 			}
+			else if (isLine)
+			{
+				currentColor = GetComponent<RealTimeLines>().lineColor;
+			}
 			else
 			{
 				currentColor = spriteRenderer.color;
@@ -171,6 +180,10 @@ public class BlendColors : MonoBehaviour
 		else if (isGuiText)
 		{
 			GetComponent<GUIText>().color = Color.Lerp(currentColor, newColor, colorCount);
+		}
+		else if (isLine)
+		{
+			GetComponent<RealTimeLines>().lineColor = Color.Lerp(currentColor, newColor, colorCount);
 		}
 		else
 		{

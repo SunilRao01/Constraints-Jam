@@ -20,23 +20,17 @@ public class AsistEffectsCubes : MonoBehaviour
 
 		StartCoroutine(rotateAround());
 	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-
-	}
 
 	public void comeDown()
 	{
 		GetComponent<RealTimeLines>().enabled = true;
-
+		/*
 		Vector3 newPosition = transform.position;
 		newPosition.y -= movementDistance;
 
 		iTween.MoveTo(gameObject, iTween.Hash("position", newPosition, "time", comeDownTime,
 		                                      "easetype", iTween.EaseType.linear,
-		                                      "islocal", true));
+		                                      "islocal", true));*/
 	}
 
 	IEnumerator rotateAround()

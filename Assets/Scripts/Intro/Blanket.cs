@@ -25,4 +25,9 @@ public class Blanket : MonoBehaviour
 		newTextColor.a = 0;
 		transform.GetChild(1).GetComponent<Text>().color = newTextColor;
 	}
+
+	public void setText(string inputText)
+	{
+		transform.GetChild(1).GetComponent<Text>().text = inputText;
+	}
 }

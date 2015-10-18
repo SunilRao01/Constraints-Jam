@@ -8,6 +8,9 @@ public class PlayerIntro : MonoBehaviour
 	public float rotationForce;
 	public Blanket mainBlanket;
 
+	public float phaseInterval;
+	public float textInterval;
+
 	public List<GameObject> phaseOneEffects;
 	public List<GameObject> phaseTwoEffects;
 	public List<GameObject> phaseThreeEffects;
@@ -16,13 +19,71 @@ public class PlayerIntro : MonoBehaviour
 	void Start()
 	{
 		StartCoroutine(rotatingCube());
-		StartCoroutine(waitBeforeEffects());
+		StartCoroutine(phaseRoutine());
 	}
 
-	// Update is called once per frame
-	void Update () 
+	IEnumerator phaseRoutine()
 	{
-		//transform.Rotate(rotationDirection * rotationForce);
+		yield return new WaitForSeconds(phaseInterval);
+
+		mainBlanket.setText("This is phase 1!");
+		mainBlanket.makeVisible();
+
+		yield return new WaitForSeconds(textInterval);
+
+		mainBlanket.makeInvisible();
+
+		for (int i = 0; i < phaseOneEffects.Count; i++)
+		{
+			phaseOneEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
+		}
+
+		yield return new WaitForSeconds(phaseInterval);
+
+		mainBlanket.setText("This is phase 2!");
+		mainBlanket.makeVisible();
+
+		yield return new WaitForSeconds(textInterval);
+
+		mainBlanket.makeInvisible();
+
+		for (int i = 0; i < phaseTwoEffects.Count; i++)
+		{
+			phaseTwoEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
+		}
+
+		yield return new WaitForSeconds(phaseInterval);
+
+		mainBlanket.setText("This is phase 3!");
+		mainBlanket.makeVisible();
+
+		yield return new WaitForSeconds(textInterval);
+
+		mainBlanket.makeInvisible();
+		
+		for (int i = 0; i < phaseThreeEffects.Count; i++)
+		{
+			phaseThreeEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
+		}
+
+		yield return new WaitForSeconds(phaseInterval);
+
+		mainBlanket.setText("This is phase 4!");
+		mainBlanket.makeVisible();
+
+		yield return new WaitForSeconds(textInterval);
+
+		mainBlanket.makeInvisible();
+		
+		for (int i = 0; i < phaseFourEffects.Count; i++)
+		{
+			phaseFourEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
+		}
+
+		yield return new WaitForSeconds(phaseInterval);
+
+		// TODO: Load scene after intro
+		Application.LoadLevel("Sandbox");
 	}
 
 	IEnumerator rotatingCube()
@@ -31,15 +92,6 @@ public class PlayerIntro : MonoBehaviour
 		{
 			yield return new WaitForSeconds(0.01f);
 			transform.Rotate(rotationDirection * rotationForce);
-		}
-	}
-
-	IEnumerator waitBeforeEffects()
-	{
-		yield return new WaitForSeconds(1.0f);
-		for (int i = 0; i < phaseOneEffects.Count; i++)
-		{
-			phaseOneEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
 		}
 	}
 }
