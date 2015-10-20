@@ -29,14 +29,14 @@ public class PlayerIntro : MonoBehaviour
 		mainBlanket.setText("This is phase 1!");
 		mainBlanket.makeVisible();
 
-		yield return new WaitForSeconds(textInterval);
-
-		mainBlanket.makeInvisible();
-
 		for (int i = 0; i < phaseOneEffects.Count; i++)
 		{
 			phaseOneEffects[i].GetComponent<AsistEffectsCubes>().comeDown();
 		}
+
+		yield return new WaitForSeconds(textInterval);
+
+		mainBlanket.makeInvisible();
 
 		yield return new WaitForSeconds(phaseInterval);
 

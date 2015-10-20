@@ -14,9 +14,9 @@ public class AsistEffectsCubes : MonoBehaviour
 		GetComponent<MeshRenderer>().enabled = false;
 
 		// Set the position on top, off the screen
-		Vector3 newPosition = transform.position;
+		/*Vector3 newPosition = transform.position;
 		newPosition.y += (movementDistance/2);
-		transform.localPosition = newPosition;
+		transform.localPosition = newPosition;*/
 
 		StartCoroutine(rotateAround());
 	}
