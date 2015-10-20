@@ -445,7 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &17693121
 MonoBehaviour:
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &53110113
 MonoBehaviour:
@@ -1509,7 +1509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &58451669
 MonoBehaviour:
@@ -2608,7 +2608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &128078884
 MonoBehaviour:
@@ -2978,7 +2978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &150225049
 MonoBehaviour:
@@ -3267,7 +3267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &168732777
 MonoBehaviour:
@@ -3394,7 +3394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &169171743
 MonoBehaviour:
@@ -4250,7 +4250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &198235596
 MonoBehaviour:
@@ -4458,7 +4458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &202999437
 MonoBehaviour:
@@ -5071,7 +5071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &277571482
 MonoBehaviour:
@@ -6759,7 +6759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &400713702
 MonoBehaviour:
@@ -6886,7 +6886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &403340778
 MonoBehaviour:
@@ -7580,7 +7580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &425681157
 MonoBehaviour:
@@ -8355,7 +8355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &441312436
 MonoBehaviour:
@@ -8643,7 +8643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   comeDownTime: 1
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 1
 --- !u!114 &455705304
 MonoBehaviour:
@@ -9067,7 +9067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &497762876
 MonoBehaviour:
@@ -9680,7 +9680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &531841663
 MonoBehaviour:
@@ -10131,7 +10131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &550318577
 MonoBehaviour:
@@ -10501,7 +10501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &566255599
 MonoBehaviour:
@@ -10790,7 +10790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &572940141
 MonoBehaviour:
@@ -11160,7 +11160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &590600574
 MonoBehaviour:
@@ -11287,7 +11287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &605160381
 MonoBehaviour:
@@ -11414,7 +11414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &605719382
 MonoBehaviour:
@@ -11946,7 +11946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &623265235
 MonoBehaviour:
@@ -12640,7 +12640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &642787819
 MonoBehaviour:
@@ -13577,7 +13577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &693135797
 MonoBehaviour:
@@ -14028,7 +14028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &719872474
 MonoBehaviour:
@@ -14236,7 +14236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &731306930
 MonoBehaviour:
@@ -14363,7 +14363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &731888862
 MonoBehaviour:
@@ -14571,7 +14571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &733048561
 MonoBehaviour:
@@ -14698,7 +14698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &733616261
 MonoBehaviour:
@@ -14906,7 +14906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &738256553
 MonoBehaviour:
@@ -15194,7 +15194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 10
   comeDownTime: .5
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 1
 --- !u!114 &742767149
 MonoBehaviour:
@@ -15375,7 +15375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &747941920
 MonoBehaviour:
@@ -17284,7 +17284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &874620207
 MonoBehaviour:
@@ -17995,7 +17995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &930982637
 MonoBehaviour:
@@ -19896,7 +19896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1018122588
 MonoBehaviour:
@@ -20074,7 +20074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 5
   comeDownTime: 1
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!1 &1022205610
 GameObject:
@@ -20122,7 +20122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1022205613
 MonoBehaviour:
@@ -20573,7 +20573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1039954894
 MonoBehaviour:
@@ -20700,7 +20700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1040220579
 MonoBehaviour:
@@ -20826,7 +20826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 15
   comeDownTime: .25
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1049749299
 MonoBehaviour:
@@ -21088,7 +21088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1060715894
 MonoBehaviour:
@@ -21296,7 +21296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1073034229
 MonoBehaviour:
@@ -21422,7 +21422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 15
   comeDownTime: .25
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 1
 --- !u!114 &1084052656
 MonoBehaviour:
@@ -21522,7 +21522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1086164995
 MonoBehaviour:
@@ -24631,7 +24631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1221556734
 MonoBehaviour:
@@ -25568,7 +25568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1265343951
 MonoBehaviour:
@@ -25938,7 +25938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1273996346
 MonoBehaviour:
@@ -27746,7 +27746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1378211121
 MonoBehaviour:
@@ -29007,7 +29007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1466602164
 MonoBehaviour:
@@ -29701,7 +29701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1512051884
 MonoBehaviour:
@@ -29990,7 +29990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1521533532
 MonoBehaviour:
@@ -30117,7 +30117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1526747515
 MonoBehaviour:
@@ -30568,7 +30568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1553509597
 MonoBehaviour:
@@ -30775,7 +30775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 10
   comeDownTime: .5
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1558385347
 MonoBehaviour:
@@ -31280,7 +31280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1589913005
 MonoBehaviour:
@@ -31650,7 +31650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1618307028
 MonoBehaviour:
@@ -32101,7 +32101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1632031787
 MonoBehaviour:
@@ -32309,7 +32309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1647380334
 MonoBehaviour:
@@ -32679,7 +32679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1675011944
 MonoBehaviour:
@@ -33130,7 +33130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1708161284
 MonoBehaviour:
@@ -33765,7 +33765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1727918922
 MonoBehaviour:
@@ -34216,7 +34216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1754420256
 MonoBehaviour:
@@ -34910,7 +34910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1791060928
 MonoBehaviour:
@@ -36576,7 +36576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1866172020
 MonoBehaviour:
@@ -37756,7 +37756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1919117902
 MonoBehaviour:
@@ -38207,7 +38207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1943736301
 MonoBehaviour:
@@ -38577,7 +38577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1955155015
 MonoBehaviour:
@@ -38704,7 +38704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1956523543
 MonoBehaviour:
@@ -39074,7 +39074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1967432380
 MonoBehaviour:
@@ -39282,7 +39282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1974387918
 MonoBehaviour:
@@ -39652,7 +39652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &1995450475
 MonoBehaviour:
@@ -39941,7 +39941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &2005397246
 MonoBehaviour:
@@ -40149,7 +40149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &2017727179
 MonoBehaviour:
@@ -42490,7 +42490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &2127417040
 MonoBehaviour:
@@ -42779,7 +42779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &2131793664
 MonoBehaviour:
@@ -42906,7 +42906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 25
   comeDownTime: 0
-  movementDistance: 0
+  movementDistance: 1
   negativeDirection: 0
 --- !u!114 &2132875161
 MonoBehaviour:

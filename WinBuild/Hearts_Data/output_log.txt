@@ -12,16 +12,12 @@ Platform assembly: D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\H
 Loading D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\Hearts_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\Hearts_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\Hearts_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.038 seconds
+- Completed reload, in  0.039 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\Hearts_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Game Development\ConstraintsJam\Constraints-Jam\WinBuild\Hearts_Data\Managed\System.dll (this message is harmless)
-Apparently you're jumping.
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
 Letter collided with bullet!
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
@@ -50,27 +46,11 @@ Letter collided with bullet!
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-Letter collided with bullet!
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Letter collided with bullet!
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Letter collided with bullet!
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Letter collided with bullet!
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
-Letter collided with bullet!
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
 Apparently you're jumping.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Letter collided with bullet!
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 

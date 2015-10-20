@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Heroine : MonoBehaviour 
 {
-	private GameObject shooter;
+	public GameObject shooter;
 	private Transform lookTarget;
 	public GameObject bulletPrefab;
 	public float bulletForce;
@@ -14,7 +14,7 @@ public class Heroine : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		shooter = transform.GetChild(1).gameObject;
+		shooter = transform.GetChild(0).GetChild(0).gameObject;
 	}
 	
 	// Update is called once per frame
