@@ -15,6 +15,14 @@ public class Heroine : MonoBehaviour
 	public bool phase2;
 	public bool phase3;
 
+	public float phase3MinWaitTime;
+	public float phase3MaxWaitTime;
+
+	public float phase3MinRotationForce;
+	public float phase3MaxRotationForce;
+
+	public float phase3JumpForce;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -23,6 +31,10 @@ public class Heroine : MonoBehaviour
 		if (phase2)
 		{
 			StartCoroutine(waitThenShoot());
+		}
+		else if (phase3)
+		{
+			StartCoroutine(randomWaitThenJump());
 		}
 	}
 	
@@ -50,6 +62,36 @@ public class Heroine : MonoBehaviour
 			Vector2 bulletForceDirection = transform.GetChild(0).up;
 			bulletForceDirection *= bulletForce;
 			bullet.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection);
+		}
+	}
+
+	IEnumerator randomWaitThenJump()
+	{
+		while (true)
+		{
+			float waitTime = Random.Range(phase3MinWaitTime, phase3MaxWaitTime);
+			yield return new WaitForSeconds(waitTime);
+
+			// Make heroine jump up
+			transform.GetChild(0).GetComponent<Rigidbody2D>().AddForce(Vector2.up * phase3JumpForce);
+
+			// Make heroine rotate with a random force
+			float rotationForce = Random.Range(-phase3MinRotationForce, phase3MaxRotationForce);
+			transform.GetChild(0).GetComponent<Rigidbody2D>().AddTorque(rotationForce);
+
+			// Shoot bullets out of each end
+			GameObject bullet_1 = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(0).position, Quaternion.identity);
+			bullet_1.transform.rotation = shooter.transform.rotation;
+			GameObject bullet_2 = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(1).position, Quaternion.identity);
+			bullet_2.transform.rotation = Quaternion.Inverse(shooter.transform.rotation);
+
+			Vector2 bulletForceDirection_1 = shooter.transform.up;
+			bulletForceDirection_1 *= bulletForce;
+			bullet_1.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection_1);
+
+			Vector2 bulletForceDirection_2 = -shooter.transform.up;
+			bulletForceDirection_2 *= bulletForce;
+			bullet_2.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection_2);
 		}
 	}
 

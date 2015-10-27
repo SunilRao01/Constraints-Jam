@@ -33,7 +33,7 @@ public class HeroineBody : MonoBehaviour
 			yield return new WaitForSeconds(0.01f);
 			
 			// Level 1 AI: Go left and right
-			if (stage_1)
+			if (stage_1 || stage_3)
 			{
 				// Set the x position to loop between -3 and 3
 				Vector3 newPosition = transform.position;
@@ -45,11 +45,6 @@ public class HeroineBody : MonoBehaviour
 			else if (stage_2)
 			{
 				transform.RotateAround(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), Vector3.forward, 0.6f);
-			}
-			// Level 3 AI: Jump randomly and shoot at peak, chill with player
-			else if (stage_3)
-			{
-				
 			}
 		}
 	}
