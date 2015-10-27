@@ -20,7 +20,10 @@ public class HeroineBody : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.Rotate(Vector2.up * 0.1f);
+		if (stage_1)
+		{
+			transform.Rotate(Vector2.up * 0.1f);
+		}
 	}
 
 	IEnumerator movementAI()
@@ -41,7 +44,7 @@ public class HeroineBody : MonoBehaviour
 			// Level 2 AI: Continuously go in a circle
 			else if (stage_2)
 			{
-				
+				transform.RotateAround(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), Vector3.forward, 0.6f);
 			}
 			// Level 3 AI: Jump randomly and shoot at peak, chill with player
 			else if (stage_3)

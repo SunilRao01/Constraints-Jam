@@ -40946,8 +40946,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 31216c0ab5fd1ca418a3dab36f420822, type: 3}
-    m_FontSize: 98
+    m_Font: {fileID: 12800000, guid: ecb01c9ce7df92c41b4b298a6417664f, type: 3}
+    m_FontSize: 64
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -63483,7 +63483,7 @@ GameObject:
   - 114: {fileID: 1716118778}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Blanket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78308,7 +78308,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationDirection: {x: 1, y: 1, z: 1}
   rotationForce: 1
-  mainBlanket: {fileID: 1716118778}
   phaseInterval: 10
   textInterval: 1
   phaseOneEffects:

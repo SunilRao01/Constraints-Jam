@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Heroine : MonoBehaviour 
 {
-	public GameObject shooter;
+	private GameObject shooter;
 	private Transform lookTarget;
 	public GameObject bulletPrefab;
 	public float bulletForce;
@@ -11,18 +11,45 @@ public class Heroine : MonoBehaviour
 	private bool waiting;
 	public float shootingInterval;
 
+	public bool phase1;
+	public bool phase2;
+	public bool phase3;
+
 	// Use this for initialization
 	void Start () 
 	{
 		shooter = transform.GetChild(0).GetChild(0).gameObject;
+
+		if (phase2)
+		{
+			StartCoroutine(waitThenShoot());
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (lookTarget)
+		if (phase1)
 		{
-			shooter.transform.up = lookTarget.position - shooter.transform.position;
+			if (lookTarget)
+			{
+				shooter.transform.up = lookTarget.position - shooter.transform.position;
+			}
+		}
+	}
+
+	IEnumerator waitThenShoot()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(shootingInterval);
+
+			GameObject bullet = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(0).position, Quaternion.identity);
+			bullet.transform.rotation = shooter.transform.rotation;
+
+			Vector2 bulletForceDirection = transform.GetChild(0).up;
+			bulletForceDirection *= bulletForce;
+			bullet.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection);
 		}
 	}
 
@@ -40,19 +67,22 @@ public class Heroine : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.CompareTag("Enemy") && !waiting)
+		if (phase1)
 		{
-			// TODO: Look at enemy, shoot bullet (that will hit), unfocus enemy
-			lookTarget = other.transform;
+			if (other.CompareTag("Enemy") && !waiting)
+			{
+				// TODO: Look at enemy, shoot bullet (that will hit), unfocus enemy
+				lookTarget = other.transform;
 
-			GameObject bullet = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(0).position, Quaternion.identity);
-			bullet.GetComponent<HeroineBullet>().target = lookTarget;
+				GameObject bullet = (GameObject) Instantiate(bulletPrefab, shooter.transform.GetChild(0).position, Quaternion.identity);
+				bullet.GetComponent<HeroineBullet>().target = lookTarget;
 
-			Vector2 bulletForceDirection = lookTarget.position - bullet.transform.position;
-			bulletForceDirection *= bulletForce;
-			bullet.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection);
+				Vector2 bulletForceDirection = lookTarget.position - bullet.transform.position;
+				bulletForceDirection *= bulletForce;
+				bullet.GetComponent<Rigidbody2D>().AddForce(bulletForceDirection);
 
-			StartCoroutine(waitBeforeShooting());
+				StartCoroutine(waitBeforeShooting());
+			}
 		}
 	}
 }

@@ -6,7 +6,7 @@ public class PlayerIntro : MonoBehaviour
 {
 	public Vector3 rotationDirection;
 	public float rotationForce;
-	public Blanket mainBlanket;
+	private Blanket mainBlanket;
 
 	public float phaseInterval;
 	public float textInterval;
@@ -18,6 +18,8 @@ public class PlayerIntro : MonoBehaviour
 
 	void Start()
 	{
+		mainBlanket = GameObject.FindGameObjectWithTag("Blanket").GetComponent<Blanket>();
+
 		StartCoroutine(rotatingCube());
 		StartCoroutine(phaseRoutine());
 	}
@@ -26,7 +28,7 @@ public class PlayerIntro : MonoBehaviour
 	{
 		yield return new WaitForSeconds(phaseInterval);
 
-		mainBlanket.setText("This is phase 1!");
+		mainBlanket.setText("Falling.");
 		mainBlanket.makeVisible();
 
 		for (int i = 0; i < phaseOneEffects.Count; i++)
@@ -40,7 +42,7 @@ public class PlayerIntro : MonoBehaviour
 
 		yield return new WaitForSeconds(phaseInterval);
 
-		mainBlanket.setText("This is phase 2!");
+		mainBlanket.setText("Deeper and deeper.");
 		mainBlanket.makeVisible();
 
 		yield return new WaitForSeconds(textInterval);
@@ -54,7 +56,7 @@ public class PlayerIntro : MonoBehaviour
 
 		yield return new WaitForSeconds(phaseInterval);
 
-		mainBlanket.setText("This is phase 3!");
+		mainBlanket.setText("All alone.");
 		mainBlanket.makeVisible();
 
 		yield return new WaitForSeconds(textInterval);
@@ -68,7 +70,7 @@ public class PlayerIntro : MonoBehaviour
 
 		yield return new WaitForSeconds(phaseInterval);
 
-		mainBlanket.setText("This is phase 4!");
+		mainBlanket.setText("Will I ever get out?");
 		mainBlanket.makeVisible();
 
 		yield return new WaitForSeconds(textInterval);
@@ -83,7 +85,7 @@ public class PlayerIntro : MonoBehaviour
 		yield return new WaitForSeconds(phaseInterval);
 
 		// TODO: Load scene after intro
-		Application.LoadLevel("Sandbox");
+		Application.LoadLevel("Talking");
 	}
 
 	IEnumerator rotatingCube()
