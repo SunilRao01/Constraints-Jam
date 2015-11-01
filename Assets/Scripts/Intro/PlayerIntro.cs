@@ -84,7 +84,8 @@ public class PlayerIntro : MonoBehaviour
 
 		yield return new WaitForSeconds(phaseInterval);
 
-		// TODO: Load scene after intro
+		// Load scene after intro
+		PlayerPrefs.SetString("LastScene", Application.loadedLevelName);
 		Application.LoadLevel("Talking");
 	}
 

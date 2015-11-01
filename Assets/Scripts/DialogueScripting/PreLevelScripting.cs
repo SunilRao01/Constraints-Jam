@@ -28,6 +28,25 @@ public class PreLevelScripting : MonoBehaviour
 		dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText");
 
+		// Set current phase according ot last scene from PlayerPrefs
+		switch (PlayerPrefs.GetString("LastScene"))
+		{
+		case "Intro":
+			currentPhase = 0;
+			break;
+		case "Game_1":
+			currentPhase = 1;
+			break;
+		case "Talking":
+			// TODO Handle phase count for
+			// dialogue before each level
+			// (Didn't cuont for first since we
+			// had the intro)
+		case "Game_2":
+			break;
+
+		}
+
 		// If phase 1, start player at top and make him rotate
 		if (currentPhase == 0)
 		{

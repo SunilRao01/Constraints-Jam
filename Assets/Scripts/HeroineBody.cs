@@ -44,7 +44,7 @@ public class HeroineBody : MonoBehaviour
 			// Level 2 AI: Continuously go in a circle
 			else if (stage_2)
 			{
-				transform.RotateAround(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), Vector3.forward, 0.6f);
+				transform.RotateAround(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, 0)), Vector3.forward, 0.8f);
 			}
 		}
 	}
@@ -53,6 +53,7 @@ public class HeroineBody : MonoBehaviour
 	{
 		if (other.CompareTag("Enemy"))
 		{
+			PlayerPrefs.SetString("LastScene", Application.loadedLevelName);
 			Application.LoadLevel("GameOver");
 		}
 	}

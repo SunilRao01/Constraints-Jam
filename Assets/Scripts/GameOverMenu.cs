@@ -9,7 +9,7 @@ public class GameOverMenu : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			Application.LoadLevel(gameScene);
+			Application.LoadLevel(PlayerPrefs.GetString("LastScene"));
 		}
 	}
 }

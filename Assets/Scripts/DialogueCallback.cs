@@ -25,7 +25,6 @@ public class DialogueCallback : MonoBehaviour
 	public void dialogueCallback()
 	{
 		int currentPhase = GetComponent<PreLevelScripting>().getCurrentPhase();
-		Debug.Log("Reached dialogue callback! Currently @ phase: " + currentPhase);
 
 		if (currentPhase == 0)
 		{
@@ -35,7 +34,8 @@ public class DialogueCallback : MonoBehaviour
 			GetComponent<StartScreen>().enabled = true;
 			GetComponent<StartScreen>().enableKeys();
 		}
-		else
+		// TODO: Current phase will be odd, make heroines arrive!
+		else if (currentPhase % 2 != 0)
 		{
 			if (!finishedPreDialogue)
 			{	
@@ -71,6 +71,12 @@ public class DialogueCallback : MonoBehaviour
 				dialogueText.GetComponent<Dialogue>().startDialogue();
 			}
 		}
+		// TODO: This will be for the callback after the levels, make heroines leave!
+		else
+		{
+
+		}
+
 	}
 
 	void Update()
