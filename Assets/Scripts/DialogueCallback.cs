@@ -11,7 +11,6 @@ public class DialogueCallback : MonoBehaviour
 
 	public List<GameObject> heroines;
 	private bool finishedPreDialogue; // Used to signal when heroine entrance is done talking, switches to player
-	private GameObject currentHeroine;
 
 	private bool waitForInput;
 	private int currentPhase;
@@ -23,12 +22,6 @@ public class DialogueCallback : MonoBehaviour
 		mainBlanket = GameObject.FindGameObjectWithTag("Blanket").GetComponent<Blanket>();
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Dialogue>();
 		dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
-
-		if (currentPhase % 2 != 0)
-		{
-			// If talking phase after level, spawn Heroine from the get go
-			currentHeroine = (GameObject) Instantiate(heroines[currentPhase-1]);
-		}
 	}
 
 	public void dialogueCallback()
@@ -81,6 +74,7 @@ public class DialogueCallback : MonoBehaviour
 		// TODO: This will be for the callback after the heroine talks, send her back!
 		else
 		{
+			/*
 			// Move Heroine back up
 			Vector3 targetHeroinePosition = currentHeroine.transform.position;
 			targetHeroinePosition.y += 5;
@@ -89,6 +83,7 @@ public class DialogueCallback : MonoBehaviour
 			                                           "oncompletetarget", gameObject,
 			                                           "oncomplete", "afterHeroineLeaves"));
 
+			*/
 		}
 
 	}
@@ -133,7 +128,21 @@ public class DialogueCallback : MonoBehaviour
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 		                                                                   "easetype", iTween.EaseType.linear));
 
-		// TODO: Start player's ending dialogue
+		// Start player's ending dialogue
+		int postLevelDialogueIndex = GetComponent<PreLevelScripting>().postLevelDialogueIndex;
+		string[] currentDialogues = GetComponent<PreLevelScripting>().postLevelPlayerDialogue[postLevelDialogueIndex].Split(new char[]{'|'});
 
+		// THIS MAY BE A PROBLEM, FUCK IF I KNOW
+		dialogueText.GetComponent<Dialogue>().dialogueList.Clear();
+		for (int i = 0; i < currentDialogues.Length; i++)
+		{
+			dialogueText.GetComponent<Dialogue>().dialogueList.Add(currentDialogues[i]);
+		}
+
+		// Set dialgue finish callback to start next level
+		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Talking";
+		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
+
+		dialogueText.GetComponent<Dialogue>().startDialogue();
 	}
 }

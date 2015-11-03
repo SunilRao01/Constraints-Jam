@@ -33771,11 +33771,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitBeforeDialogue: 3
   blanket: {fileID: 141915839}
-  dialogue:
-  - Shit.|Falling sucks.|I wonder if anyone will save me?
-  - There has to be someone up there.|I saw a few on the way down.|ANYBODY HERE!?
-  - Shit.|Falling sucks.|I wonder if anyone will save me?
-  - Shit.|Falling sucks.|I wonder if anyone will save me?
+  preLevelPlayerDialogue: []
+  postLevelPlayerDialogue: []
+  heroines: []
+  preLevelDialogueIndex: 0
+  postLevelDialogueIndex: 0
 --- !u!114 &1983657786
 MonoBehaviour:
   m_ObjectHideFlags: 0
