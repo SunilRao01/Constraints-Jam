@@ -10,22 +10,29 @@ public class DialogueCallback : MonoBehaviour
 	private GameObject dialogueBox;
 
 	public List<GameObject> heroines;
-	private bool finishedPreDialogue;
-	private bool finishedDialogue;
+	private bool finishedPreDialogue; // Used to signal when heroine entrance is done talking, switches to player
+	private GameObject currentHeroine;
 
 	private bool waitForInput;
+	private int currentPhase;
 
 	void Start()
 	{
+		currentPhase = GetComponent<PreLevelScripting>().getCurrentPhase();
+
 		mainBlanket = GameObject.FindGameObjectWithTag("Blanket").GetComponent<Blanket>();
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Dialogue>();
 		dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+
+		if (currentPhase % 2 != 0)
+		{
+			// If talking phase after level, spawn Heroine from the get go
+			currentHeroine = (GameObject) Instantiate(heroines[currentPhase-1]);
+		}
 	}
 
 	public void dialogueCallback()
 	{
-		int currentPhase = GetComponent<PreLevelScripting>().getCurrentPhase();
-
 		if (currentPhase == 0)
 		{
 			mainBlanket.setText("Hearts\n\nA game by Sunil Rao");
@@ -34,8 +41,8 @@ public class DialogueCallback : MonoBehaviour
 			GetComponent<StartScreen>().enabled = true;
 			GetComponent<StartScreen>().enableKeys();
 		}
-		// TODO: Current phase will be odd, make heroines arrive!
-		else if (currentPhase % 2 != 0)
+		// Current phase will be odd, make heroines arrive!
+		else if (currentPhase % 2 == 0)
 		{
 			if (!finishedPreDialogue)
 			{	
@@ -71,9 +78,16 @@ public class DialogueCallback : MonoBehaviour
 				dialogueText.GetComponent<Dialogue>().startDialogue();
 			}
 		}
-		// TODO: This will be for the callback after the levels, make heroines leave!
+		// TODO: This will be for the callback after the heroine talks, send her back!
 		else
 		{
+			// Move Heroine back up
+			Vector3 targetHeroinePosition = currentHeroine.transform.position;
+			targetHeroinePosition.y += 5;
+			iTween.MoveTo(currentHeroine, iTween.Hash("position", targetHeroinePosition, "time", 5.0f,
+			                                           "easetype", iTween.EaseType.linear,
+			                                           "oncompletetarget", gameObject,
+			                                           "oncomplete", "afterHeroineLeaves"));
 
 		}
 
@@ -108,5 +122,18 @@ public class DialogueCallback : MonoBehaviour
 
 		finishedPreDialogue = true;
 		dialogueText.GetComponent<Dialogue>().startDialogue();
+	}
+
+	void afterHeroineLeaves()
+	{
+		// Move dialogue box down
+		Vector3 targetPosition = dialogueBox.transform.parent.position;
+		targetPosition.y -= 5;
+		
+		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
+		                                                                   "easetype", iTween.EaseType.linear));
+
+		// TODO: Start player's ending dialogue
+
 	}
 }

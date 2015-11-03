@@ -11795,7 +11795,7 @@ GameObject:
   - 114: {fileID: 684918356}
   m_Layer: 0
   m_Name: Heroine_1
-  m_TagString: Untagged
+  m_TagString: Heroine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20827,7 +20827,7 @@ GameObject:
   - 114: {fileID: 1283604287}
   - 114: {fileID: 1283604286}
   m_Layer: 5
-  m_Name: ScreenCanvas
+  m_Name: TimerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

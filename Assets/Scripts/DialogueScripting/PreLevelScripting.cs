@@ -18,8 +18,11 @@ public class PreLevelScripting : MonoBehaviour
 
 	public Blanket blanket;
 	
-	// Dialoge
-	public List<string> dialogue;
+	// Dialogue
+	public List<string> preLevelPlayerDialogue;
+	public List<string> postLevelPlayerDialogue;
+	private int preLevelDialogueIndex;
+	private int postLevelDialogueIndex;
 
 	void Start () 
 	{
@@ -33,21 +36,30 @@ public class PreLevelScripting : MonoBehaviour
 		{
 		case "Intro":
 			currentPhase = 0;
+			preLevelDialogueIndex = 0;
 			break;
 		case "Game_1":
 			currentPhase = 1;
+			postLevelDialogueIndex = 0;
 			break;
 		case "Talking":
 			// TODO Handle phase count for
 			// dialogue before each level
 			// (Didn't cuont for first since we
 			// had the intro)
+			// TODO: Handle postLevelDialogueIndex
 		case "Game_2":
+			currentPhase = 3;
+			postLevelDialogueIndex = 1;
+			break;
+		case "Game_3":
+			currentPhase = 5;
+			postLevelDialogueIndex = 2;
 			break;
 
 		}
 
-		// If phase 1, start player at top and make him rotate
+		// If phase 0 (after intro), start player at top and make him rotate
 		if (currentPhase == 0)
 		{
 			// Start player at top
@@ -62,7 +74,8 @@ public class PreLevelScripting : MonoBehaviour
 			StartCoroutine(rotatePlayer());
 			StartCoroutine(waitThenTalk());
 		}
-		else
+		// TODO: Implement start of prelevel dialogue of player
+		else if (currentPhase % 2 == 0)
 		{
 			// Make dialogue box visible
 			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
@@ -75,6 +88,27 @@ public class PreLevelScripting : MonoBehaviour
 			                                        "easetype", iTween.EaseType.linear,
 			                                        "oncompletetarget", gameObject,
 			                                        "oncomplete", "afterDialogueScale"));
+		}
+		// TODO: Implement start of postlevel dialogue of heroine
+		else
+		{
+			// TODO: Set dialoguebox at heroine's position
+			// TODO: Make sure that heroine is present and instantiated
+			// TODO: Start heroine dialogue
+			// TODO: Set proper callback for DialogueCallback
+			/*
+			// Make dialogue box visible
+			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
+			newDialogueColor.a = 1;
+			dialogueBox.GetComponent<Image>().color = newDialogueColor;
+			
+			// iTween scale dialogue box
+			Vector3 targetScale = new Vector3(2.5f, 2.5f, 2.5f);
+			iTween.ScaleTo(dialogueBox, iTween.Hash("scale", targetScale, "time", 0.5f,
+			                                        "easetype", iTween.EaseType.linear,
+			                                        "oncompletetarget", gameObject,
+			                                        "oncomplete", "afterDialogueScale"));
+			*/
 		}
 
 	}
@@ -108,7 +142,6 @@ public class PreLevelScripting : MonoBehaviour
 			rotate = false;
 			StopCoroutine(rotatePlayer());
 		}
-		
 
 		// Make dialogue box visible
 		Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
@@ -125,14 +158,21 @@ public class PreLevelScripting : MonoBehaviour
 
 	public void afterDialogueScale()
 	{
-		// Set up next level scene for Dialogue script
-		string[] currentDialogues = dialogue[currentPhase].Split(new char[]{'|'});
-
-		for (int i = 0; i < currentDialogues.Length; i++)
+		if (currentPhase % 2 == 0)
 		{
-			dialogueText.GetComponent<Dialogue>().dialogueList.Add(currentDialogues[i]);
-		}
+			// Set up next level scene for Dialogue script
+			string[] currentDialogues = preLevelPlayerDialogue[currentPhase].Split(new char[]{'|'});
+		
+			for (int i = 0; i < currentDialogues.Length; i++)
+			{
+				dialogueText.GetComponent<Dialogue>().dialogueList.Add(currentDialogues[i]);
+			}
 
-		dialogueText.GetComponent<Dialogue>().startDialogue();
+			dialogueText.GetComponent<Dialogue>().startDialogue();
+		}
+		else
+		{
+			string[] currentDialogues = postLevelPlayerDialogue[currentPhase].Split(new char[]{'|'});
+		}
 	}
 }

@@ -33683,7 +33683,6 @@ GameObject:
   - 92: {fileID: 1983657781}
   - 124: {fileID: 1983657780}
   - 81: {fileID: 1983657779}
-  - 114: {fileID: 1983657784}
   - 114: {fileID: 1983657785}
   - 114: {fileID: 1983657786}
   - 114: {fileID: 1983657787}
@@ -33759,18 +33758,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1983657784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1983657778}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a88caae17806c054eb60f1bd1f2f3f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPhase: 0
 --- !u!114 &1983657785
 MonoBehaviour:
   m_ObjectHideFlags: 0
