@@ -9,8 +9,6 @@ public class Timer : MonoBehaviour
 
 	private float timer = 5;
 
-
-
 	void Update () 
 	{
 		timer -= Time.deltaTime;

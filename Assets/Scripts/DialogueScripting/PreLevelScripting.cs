@@ -36,24 +36,26 @@ public class PreLevelScripting : MonoBehaviour
 		currentPhase = PlayerPrefs.GetInt("Phase");
 		switch (currentPhase)
 		{
-			case 1:
-				postLevelDialogueIndex = 0;
-				break;
 			case 2:
-				preLevelDialogueIndex = 1;
+				postLevelDialogueIndex = 0;
 				break;
 			case 3:
-				postLevelDialogueIndex = 1;
-				break;
-			case 4:
-				preLevelDialogueIndex = 2;
+				preLevelDialogueIndex = 1;
 				break;
 			case 5:
+				postLevelDialogueIndex = 1;
+				break;
+			case 6:
+				preLevelDialogueIndex = 2;
+				break;
+			case 8:
 				postLevelDialogueIndex = 2;
 				break;
-			default:
+			case 9:
 				preLevelDialogueIndex = 0;
 				postLevelDialogueIndex = 0;
+				break;
+			default:
 				break;
 		}
 

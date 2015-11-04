@@ -130,7 +130,7 @@ public class DialogueCallback : MonoBehaviour
 		}
 
 		// Set dialgue finish callback to start next level
-		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Talking";
+		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Dodging_" + postLevelDialogueIndex;
 		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
 
 		dialogueText.GetComponent<Dialogue>().startDialogue();
