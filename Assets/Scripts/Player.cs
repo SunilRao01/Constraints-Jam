@@ -50,7 +50,6 @@ public class Player : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && onAxis)
 		{
-			Debug.Log("Apparently you're jumping.");
 			movementDirection.y += jumpForce;
 			rigidbody.AddForce(movementDirection);
 		}

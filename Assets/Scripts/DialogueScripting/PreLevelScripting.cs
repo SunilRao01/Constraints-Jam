@@ -37,25 +37,25 @@ public class PreLevelScripting : MonoBehaviour
 		switch (currentPhase)
 		{
 			case 2:
-				postLevelDialogueIndex = 0;
+				preLevelDialogueIndex = 0;
 				break;
 			case 3:
-				preLevelDialogueIndex = 1;
-				break;
-			case 5:
 				postLevelDialogueIndex = 1;
 				break;
-			case 6:
-				preLevelDialogueIndex = 2;
+			case 5:
+				preLevelDialogueIndex = 1;
 				break;
-			case 8:
+			case 6:
 				postLevelDialogueIndex = 2;
 				break;
+			case 8:
+				preLevelDialogueIndex = 2;
+				break;
 			case 9:
-				preLevelDialogueIndex = 0;
-				postLevelDialogueIndex = 0;
+				postLevelDialogueIndex = 2;
 				break;
 			default:
+				Application.LoadLevel("GameOver");
 				break;
 		}
 
@@ -77,7 +77,7 @@ public class PreLevelScripting : MonoBehaviour
 			StartCoroutine(waitThenTalk());
 		}
 		// Implement start of prelevel dialogue of player
-		else if (currentPhase % 2 != 0)
+		else if (currentPhase == 2 || currentPhase == 5 || currentPhase == 8)
 		{
 			// Make dialogue box visible
 			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
@@ -92,9 +92,8 @@ public class PreLevelScripting : MonoBehaviour
 			                                        "oncomplete", "afterDialogueScale"));
 		}
 		// Implement start of postlevel dialogue of heroine
-		else
+		else if (currentPhase % 3 == 0)
 		{
-
 			// TODO: Spawn CORRECT heroine (probably depending on PlayerPrefs value)
 			// Spawn heroine
 			currentHeroine = (GameObject) Instantiate(heroines[postLevelDialogueIndex]);
@@ -152,6 +151,7 @@ public class PreLevelScripting : MonoBehaviour
 		                                        "oncomplete", "afterDialogueScale"));
 	}
 
+	// Dialogue box scale callback function
 	public void afterDialogueScale()
 	{
 		if (currentPhase == 0)
@@ -160,7 +160,7 @@ public class PreLevelScripting : MonoBehaviour
 
 			dialogueText.GetComponent<Dialogue>().startDialogue();
 		}
-		else if (currentPhase % 2 != 0)
+		else if (currentPhase == 2 || currentPhase == 5 || currentPhase == 8)
 		{
 			// Set up next level scene for Dialogue script
 			string[] currentDialogues = preLevelPlayerDialogue[preLevelDialogueIndex].Split(new char[]{'|'});
@@ -172,7 +172,7 @@ public class PreLevelScripting : MonoBehaviour
 
 			dialogueText.GetComponent<Dialogue>().startDialogue();
 		}
-		else
+		else if (currentPhase % 3 == 0)
 		{
 			// TODO: Get dialogue from CORRECT heroine
 			for (int i = 0; i < heroines[postLevelDialogueIndex].GetComponent<HeroineDialogue>().postFightDialogue.Count; i++)

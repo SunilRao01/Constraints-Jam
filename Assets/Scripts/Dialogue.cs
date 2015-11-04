@@ -77,6 +77,7 @@ public class Dialogue : MonoBehaviour
 
 		if (isDialogueCallbackFunction)
 		{
+			Debug.Log("Before dialogue callback!");
 			dialogueCallbackObject.GetComponent<DialogueCallback>().dialogueCallback();
 		}
 		else if (afterDialogueNextScene != "")

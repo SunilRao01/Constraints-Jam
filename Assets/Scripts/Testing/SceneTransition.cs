@@ -6,8 +6,8 @@ public class SceneTransition : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
 	{
-		PlayerPrefs.SetInt("Phase", 0);
+		PlayerPrefs.SetInt("Phase", 1);
 
-		Application.LoadLevel("Talking");
+		Application.LoadLevel("Dodge_1");
 	}
 }

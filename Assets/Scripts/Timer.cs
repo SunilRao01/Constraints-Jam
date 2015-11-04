@@ -9,6 +9,13 @@ public class Timer : MonoBehaviour
 
 	private float timer = 5;
 
+	void Awake()
+	{
+		int currentPhase = PlayerPrefs.GetInt("Phase");
+
+		Debug.Log("Current phase: " + currentPhase.ToString());
+	}
+
 	void Update () 
 	{
 		timer -= Time.deltaTime;
@@ -19,6 +26,12 @@ public class Timer : MonoBehaviour
 		}
 		else
 		{
+			// Update current phase
+			int currentPhase = PlayerPrefs.GetInt("Phase");
+			currentPhase++;
+
+			PlayerPrefs.SetInt("Phase", currentPhase);
+
 			Application.LoadLevel("Talking");
 		}
 	}

@@ -57,7 +57,7 @@ public class StartScreen : MonoBehaviour
 			currentPhase++;
 
 			PlayerPrefs.SetInt("Phase", currentPhase);
-			Application.LoadLevel("Talking");
+			Application.LoadLevel("Dodging_1");
 		}
 
 		if (Input.GetKeyDown(KeyCode.W) && !wPressed)
