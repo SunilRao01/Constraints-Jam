@@ -33771,9 +33771,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitBeforeDialogue: 3
   blanket: {fileID: 141915839}
-  preLevelPlayerDialogue: []
-  postLevelPlayerDialogue: []
-  heroines: []
+  preLevelPlayerDialogue:
+  - Pre Game_1|Dialogue|HAR.
+  - Pre Game_2|Dialogue|HAR.
+  - Pre Game_3|Dialogue|HAR.
+  postLevelPlayerDialogue:
+  - Post Game_1|Dialogue.|BRUH.
+  - Post Game_2|Dialogue.|BRUH.
+  - Post Game_3|Dialogue.|BRUH.
+  heroines:
+  - {fileID: 194196, guid: b285e89570205f34a9389530b6c604de, type: 2}
   preLevelDialogueIndex: 0
   postLevelDialogueIndex: 0
 --- !u!114 &1983657786
@@ -33789,6 +33796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroines:
   - {fileID: 194196, guid: b285e89570205f34a9389530b6c604de, type: 2}
+  currentHeroine: {fileID: 0}
 --- !u!114 &1983657787
 MonoBehaviour:
   m_ObjectHideFlags: 0

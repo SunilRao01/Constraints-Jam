@@ -25,7 +25,7 @@ public class PreLevelScripting : MonoBehaviour
 	public int preLevelDialogueIndex;
 	public int postLevelDialogueIndex;
 	private GameObject currentHeroine;
-
+	
 	void Start () 
 	{
 		// Retrieve player object
@@ -33,30 +33,31 @@ public class PreLevelScripting : MonoBehaviour
 		dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText");
 
-		// Set current phase according ot last scene from PlayerPrefs
-		switch (PlayerPrefs.GetString("LastScene"))
+		currentPhase = PlayerPrefs.GetInt("Phase");
+		switch (currentPhase)
 		{
-		case "Intro":
-			currentPhase = 0;
-			preLevelDialogueIndex = 0;
-			break;
-		case "Game_1":
-			currentPhase = 1;
-			postLevelDialogueIndex = 0;
-			break;
-		case "Talking":
-			// TODO Handle phase count for prelevel dialogue
-			// TODO: Handle preLevelDialogueIndex
-		case "Game_2":
-			currentPhase = 3;
-			postLevelDialogueIndex = 1;
-			break;
-		case "Game_3":
-			currentPhase = 5;
-			postLevelDialogueIndex = 2;
-			break;
-
+			case 1:
+				postLevelDialogueIndex = 0;
+				break;
+			case 2:
+				preLevelDialogueIndex = 1;
+				break;
+			case 3:
+				postLevelDialogueIndex = 1;
+				break;
+			case 4:
+				preLevelDialogueIndex = 2;
+				break;
+			case 5:
+				postLevelDialogueIndex = 2;
+				break;
+			default:
+				preLevelDialogueIndex = 0;
+				postLevelDialogueIndex = 0;
+				break;
 		}
+
+		Debug.Log("Current phase: " + PlayerPrefs.GetInt("Phase"));
 
 		// If phase 0 (after intro), start player at top and make him rotate
 		if (currentPhase == 0)
@@ -73,8 +74,8 @@ public class PreLevelScripting : MonoBehaviour
 			StartCoroutine(rotatePlayer());
 			StartCoroutine(waitThenTalk());
 		}
-		// TODO: Implement start of prelevel dialogue of player
-		else if (currentPhase % 2 == 0)
+		// Implement start of prelevel dialogue of player
+		else if (currentPhase % 2 != 0)
 		{
 			// Make dialogue box visible
 			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
@@ -88,9 +89,11 @@ public class PreLevelScripting : MonoBehaviour
 			                                        "oncompletetarget", gameObject,
 			                                        "oncomplete", "afterDialogueScale"));
 		}
-		// TODO: Implement start of postlevel dialogue of heroine
+		// Implement start of postlevel dialogue of heroine
 		else
 		{
+
+			// TODO: Spawn CORRECT heroine (probably depending on PlayerPrefs value)
 			// Spawn heroine
 			currentHeroine = (GameObject) Instantiate(heroines[postLevelDialogueIndex]);
 
@@ -98,6 +101,11 @@ public class PreLevelScripting : MonoBehaviour
 			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
 			newDialogueColor.a = 1;
 			dialogueBox.GetComponent<Image>().color = newDialogueColor;
+
+			// Set dialogue box position to heroine's
+			Vector3 startingDialoguePosition = dialogueBox.transform.parent.position;
+			startingDialoguePosition.y += 5;
+			dialogueBox.transform.position = startingDialoguePosition;
 			
 			// iTween scale dialogue box
 			Vector3 targetScale = new Vector3(2.5f, 2.5f, 2.5f);
@@ -105,33 +113,8 @@ public class PreLevelScripting : MonoBehaviour
 			                                        "easetype", iTween.EaseType.linear,
 			                                        "oncompletetarget", gameObject,
 			                                        "oncomplete", "afterDialogueScale"));
-			// TODO: Start heroine dialogue
-			// TODO: Set proper callback for DialogueCallback
-			/*
-			// Make dialogue box visible
-			Color newDialogueColor = dialogueBox.GetComponent<Image>().color;
-			newDialogueColor.a = 1;
-			dialogueBox.GetComponent<Image>().color = newDialogueColor;
-			
-			// iTween scale dialogue box
-			Vector3 targetScale = new Vector3(2.5f, 2.5f, 2.5f);
-			iTween.ScaleTo(dialogueBox, iTween.Hash("scale", targetScale, "time", 0.5f,
-			                                        "easetype", iTween.EaseType.linear,
-			                                        "oncompletetarget", gameObject,
-			                                        "oncomplete", "afterDialogueScale"));
-			*/
 		}
 
-	}
-
-	public int getCurrentPhase()
-	{
-		return currentPhase;
-	}
-
-	public void nextPhase()
-	{
-		currentPhase++;
 	}
 
 	IEnumerator rotatePlayer()
@@ -169,7 +152,13 @@ public class PreLevelScripting : MonoBehaviour
 
 	public void afterDialogueScale()
 	{
-		if (currentPhase % 2 == 0)
+		if (currentPhase == 0)
+		{
+			dialogueText.GetComponent<Dialogue>().dialogueList.Add("Shit.");
+
+			dialogueText.GetComponent<Dialogue>().startDialogue();
+		}
+		else if (currentPhase % 2 != 0)
 		{
 			// Set up next level scene for Dialogue script
 			string[] currentDialogues = preLevelPlayerDialogue[preLevelDialogueIndex].Split(new char[]{'|'});
@@ -183,11 +172,13 @@ public class PreLevelScripting : MonoBehaviour
 		}
 		else
 		{
+			// TODO: Get dialogue from CORRECT heroine
 			for (int i = 0; i < heroines[postLevelDialogueIndex].GetComponent<HeroineDialogue>().postFightDialogue.Count; i++)
 			{
 				dialogueText.GetComponent<Dialogue>().dialogueList.Add(heroines[postLevelDialogueIndex].GetComponent<HeroineDialogue>().postFightDialogue[i]);
 			}
 
+			GetComponent<DialogueCallback>().currentHeroine = currentHeroine;
 			dialogueText.GetComponent<Dialogue>().startDialogue();
 		}
 	}

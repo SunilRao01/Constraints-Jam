@@ -75,8 +75,6 @@ public class Dialogue : MonoBehaviour
 			iterator++;
 		}
 
-		Debug.Log("Finished typing text for dialogue...");
-
 		if (isDialogueCallbackFunction)
 		{
 			dialogueCallbackObject.GetComponent<DialogueCallback>().dialogueCallback();

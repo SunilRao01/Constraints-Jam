@@ -237,25 +237,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preFightDialogue:
-  - Hey is that trasure!?
-  - Oh. Wait. No. It's some person.
-  - Well, looks like your stuck here.
-  - Let's see if I can help you!
-  - Hope you know how to use your gun!
+  - Heroine predialogue 1!
+  - Heroine predialogue 2!
+  - Heroine predialogue 3!
+  - Heroine predialogue 4!
+  - Heroine predialogue 5!
   playerResponseDialogue:
-  - Oh, man!
-  - I'm glad that you came...
-  - Seemed like I would be stuck here forever!
+  - Player response 1!
+  - Player response 2!
+  - Player response 3!
   postFightDialogue:
-  - Christ, this is too much.
-  - I'm sorry, but you're on your own.
-  - 'I tried, I really did! '
-  - But this is just too much for me to handle!
-  - Good luck!
+  - Heroine post response 1!
+  - Heroine post response 2!
+  - Heroine post response 3!
+  - heroine post response 4!
+  - heroine post response 5!
   playerFinalDialogue:
-  - Oh....
-  - Well thanks anyways.
-  - Goodbye.
+  - Player final dialogue 1!
+  - Player final dialogue 2!
+  - Player final dialogue 3!
 --- !u!114 &11494202
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -14,10 +14,11 @@ public class DialogueCallback : MonoBehaviour
 
 	private bool waitForInput;
 	private int currentPhase;
+	public GameObject currentHeroine;
 
 	void Start()
 	{
-		currentPhase = GetComponent<PreLevelScripting>().getCurrentPhase();
+		currentPhase = PlayerPrefs.GetInt("Phase");
 
 		mainBlanket = GameObject.FindGameObjectWithTag("Blanket").GetComponent<Blanket>();
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Dialogue>();
@@ -35,7 +36,7 @@ public class DialogueCallback : MonoBehaviour
 			GetComponent<StartScreen>().enableKeys();
 		}
 		// Current phase will be odd, make heroines arrive!
-		else if (currentPhase % 2 == 0)
+		else if (currentPhase % 2 != 0)
 		{
 			if (!finishedPreDialogue)
 			{	
@@ -71,10 +72,9 @@ public class DialogueCallback : MonoBehaviour
 				dialogueText.GetComponent<Dialogue>().startDialogue();
 			}
 		}
-		// TODO: This will be for the callback after the heroine talks, send her back!
+		// This will be for the callback after the heroine talks, send her back!
 		else
 		{
-			/*
 			// Move Heroine back up
 			Vector3 targetHeroinePosition = currentHeroine.transform.position;
 			targetHeroinePosition.y += 5;
@@ -82,24 +82,14 @@ public class DialogueCallback : MonoBehaviour
 			                                           "easetype", iTween.EaseType.linear,
 			                                           "oncompletetarget", gameObject,
 			                                           "oncomplete", "afterHeroineLeaves"));
-
-			*/
 		}
 
-	}
-
-	void Update()
-	{
-		if (waitForInput)
-		{
-
-		}
 	}
 
 	void afterHeroineArrival()
 	{
 		Debug.Log("After heroine arrival!");
-		int currentPhase = GetComponent<PreLevelScripting>().getCurrentPhase();
+		int currentPhase = PlayerPrefs.GetInt("Phase");
 
 		// Move dialogue box up
 		Vector3 targetPosition = dialogueBox.transform.parent.position;

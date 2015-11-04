@@ -40,6 +40,12 @@ public class StartScreen : MonoBehaviour
 			startKeys[i].color = newColor;
 		}
 
+		wPressed = false;
+		aPressed = false;
+		sPressed = false;
+		dPressed = false;
+		spacePressed = false;
+
 		enablePressKeys = true;
 	}
 
@@ -47,7 +53,10 @@ public class StartScreen : MonoBehaviour
 	{
 		if (wPressed && aPressed && sPressed && dPressed && spacePressed)
 		{
-			GetComponent<PreLevelScripting>().nextPhase();
+			int currentPhase = PlayerPrefs.GetInt("Phase");
+			currentPhase++;
+
+			PlayerPrefs.SetInt("Phase", currentPhase);
 			Application.LoadLevel("Talking");
 		}
 

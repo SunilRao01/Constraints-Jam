@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 	// TODO: Count down timer
 	// TODO: Go to 'Talking' Scene after timer reaches 0
 
-	private float timer = 60;
+	private float timer = 5;
 
 
 
