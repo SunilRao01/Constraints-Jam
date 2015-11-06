@@ -56,7 +56,23 @@ public class DialogueCallback : MonoBehaviour
 			{
 				//  Move the dialogue box
 				Vector3 targetPosition = dialogueBox.transform.parent.position;
-				targetPosition.y -= 5;
+
+				switch (currentPhase)
+				{
+				case 2:
+					targetPosition.y -= 5;
+					break;
+				case 5:
+					targetPosition.y -= 3;
+					break;
+				case 8:
+					//nextLevelNum = 3;
+					break;
+				default:
+					//nextLevelNum = 1;
+					break;
+				}
+
 				
 				iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 				                                                                   "easetype", iTween.EaseType.linear));
@@ -68,7 +84,25 @@ public class DialogueCallback : MonoBehaviour
 					dialogueText.GetComponent<Dialogue>().dialogueList.Add(heroines[preDialogueIndex].GetComponent<HeroineDialogue>().playerResponseDialogue[i]);
 				}
 
-				string nextLevel = "Game_" + currentPhase;
+				int nextLevelNum = 0;
+
+				switch (currentPhase)
+				{
+					case 2:
+						nextLevelNum = 1;
+						break;
+					case 5:
+						nextLevelNum = 2;
+						break;
+					case 8:
+						nextLevelNum = 3;
+						break;
+					default:
+						nextLevelNum = 1;
+						break;
+				}
+
+				string nextLevel = "Game_" + nextLevelNum;
 				dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = nextLevel;
 				dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
 				dialogueText.GetComponent<Dialogue>().startDialogue();
@@ -79,7 +113,7 @@ public class DialogueCallback : MonoBehaviour
 		{
 			// Move Heroine back up
 			Vector3 targetHeroinePosition = currentHeroine.transform.position;
-			targetHeroinePosition.y += 5;
+			targetHeroinePosition.y += 10;
 			iTween.MoveTo(currentHeroine, iTween.Hash("position", targetHeroinePosition, "time", 5.0f,
 			                                           "easetype", iTween.EaseType.linear,
 			                                           "oncompletetarget", gameObject,
@@ -95,7 +129,19 @@ public class DialogueCallback : MonoBehaviour
 
 		// Move dialogue box up
 		Vector3 targetPosition = dialogueBox.transform.parent.position;
-		targetPosition.y += 5;
+		//targetPosition.y += 5;
+
+		switch (currentPhase)
+		{
+			case 2:
+				targetPosition.y += 5;
+				break;
+			case 5:
+				targetPosition.y += 3;
+				break;
+			case 8:
+				break;
+		}
 		
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 		                                                                   "easetype", iTween.EaseType.linear));
@@ -116,6 +162,7 @@ public class DialogueCallback : MonoBehaviour
 		// Move dialogue box down
 		Vector3 targetPosition = dialogueBox.transform.parent.position;
 		targetPosition.y -= 5;
+
 		
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 		                                                                   "easetype", iTween.EaseType.linear));
@@ -131,8 +178,14 @@ public class DialogueCallback : MonoBehaviour
 			dialogueText.GetComponent<Dialogue>().dialogueList.Add(currentDialogues[i]);
 		}
 
+		// Update current scene
+		int currentPhase = PlayerPrefs.GetInt("Phase");
+		currentPhase++;
+		
+		PlayerPrefs.SetInt("Phase", currentPhase);
+
 		// Set dialgue finish callback to start next level
-		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Dodging_" + ((currentPhase/3) + 1);
+		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Dodge_" + ((currentPhase/3) + 1);
 		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
 
 		dialogueText.GetComponent<Dialogue>().startDialogue();

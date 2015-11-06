@@ -33781,6 +33781,8 @@ MonoBehaviour:
   - Post Game_3|Dialogue.|BRUH.
   heroines:
   - {fileID: 194196, guid: b285e89570205f34a9389530b6c604de, type: 2}
+  - {fileID: 100338, guid: 5b447194d9a26784fa2b5fc95b46cede, type: 2}
+  - {fileID: 137050, guid: 7bbe396c14b1fef4a94826a22a8319af, type: 2}
   preLevelDialogueIndex: 0
   postLevelDialogueIndex: 0
 --- !u!114 &1983657786
@@ -33796,7 +33798,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroines:
   - {fileID: 194196, guid: b285e89570205f34a9389530b6c604de, type: 2}
-  currentHeroine: {fileID: 0}
+  - {fileID: 100338, guid: 5b447194d9a26784fa2b5fc95b46cede, type: 2}
+  - {fileID: 137050, guid: 7bbe396c14b1fef4a94826a22a8319af, type: 2}
+  currentHeroine: {fileID: 100338, guid: 5b447194d9a26784fa2b5fc95b46cede, type: 2}
 --- !u!114 &1983657787
 MonoBehaviour:
   m_ObjectHideFlags: 0

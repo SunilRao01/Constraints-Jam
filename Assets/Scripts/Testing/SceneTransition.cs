@@ -3,11 +3,13 @@ using System.Collections;
 
 public class SceneTransition : MonoBehaviour {
 
+	public int nextPhase;
+
 	// Use this for initialization
 	void Awake () 
 	{
-		PlayerPrefs.SetInt("Phase", 1);
+		PlayerPrefs.SetInt("Phase", nextPhase);
 
-		Application.LoadLevel("Dodge_1");
+		Application.LoadLevel("Talking");
 	}
 }

@@ -36,17 +36,21 @@ public class PreLevelScripting : MonoBehaviour
 		currentPhase = PlayerPrefs.GetInt("Phase");
 		switch (currentPhase)
 		{
+			case 0:
+				preLevelDialogueIndex = 0;
+				postLevelDialogueIndex = 0;
+				break;
 			case 2:
 				preLevelDialogueIndex = 0;
 				break;
 			case 3:
-				postLevelDialogueIndex = 1;
+				postLevelDialogueIndex = 0;
 				break;
 			case 5:
 				preLevelDialogueIndex = 1;
 				break;
 			case 6:
-				postLevelDialogueIndex = 2;
+				postLevelDialogueIndex = 1;
 				break;
 			case 8:
 				preLevelDialogueIndex = 2;
@@ -60,6 +64,8 @@ public class PreLevelScripting : MonoBehaviour
 		}
 
 		Debug.Log("Current phase: " + PlayerPrefs.GetInt("Phase"));
+		Debug.Log("Post level dialogue index: " + postLevelDialogueIndex);
+		Debug.Log("Heroines length: " + heroines.Count);
 
 		// If phase 0 (after intro), start player at top and make him rotate
 		if (currentPhase == 0)
@@ -94,7 +100,6 @@ public class PreLevelScripting : MonoBehaviour
 		// Implement start of postlevel dialogue of heroine
 		else if (currentPhase % 3 == 0)
 		{
-			// TODO: Spawn CORRECT heroine (probably depending on PlayerPrefs value)
 			// Spawn heroine
 			currentHeroine = (GameObject) Instantiate(heroines[postLevelDialogueIndex]);
 
@@ -106,7 +111,7 @@ public class PreLevelScripting : MonoBehaviour
 			// Set dialogue box position to heroine's
 			Vector3 startingDialoguePosition = dialogueBox.transform.parent.position;
 			startingDialoguePosition.y += 5;
-			dialogueBox.transform.position = startingDialoguePosition;
+			dialogueBox.transform.parent.position = startingDialoguePosition;
 			
 			// iTween scale dialogue box
 			Vector3 targetScale = new Vector3(2.5f, 2.5f, 2.5f);
