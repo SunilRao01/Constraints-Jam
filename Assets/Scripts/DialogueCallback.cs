@@ -228,10 +228,17 @@ public class DialogueCallback : MonoBehaviour
 		
 		PlayerPrefs.SetInt("Phase", currentPhase);
 
-		// Set dialgue finish callback to start next level
-		dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Dodge_" + ((currentPhase/3) + 1);
-		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
+		if (currentPhase != 9)
+		{
+			// Set dialgue finish callback to start next level
+			dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Dodge_" + ((currentPhase/3) + 1);
+		}
+		else
+		{
+			dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Outro";
+		}
 
+		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;
 		dialogueText.GetComponent<Dialogue>().startDialogue();
 	}
 }

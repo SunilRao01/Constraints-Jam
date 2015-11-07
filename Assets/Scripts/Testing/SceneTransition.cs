@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SceneTransition : MonoBehaviour {
 
+	public string nextScene;
 	public int nextPhase;
 
 	// Use this for initialization
@@ -10,6 +11,6 @@ public class SceneTransition : MonoBehaviour {
 	{
 		PlayerPrefs.SetInt("Phase", nextPhase);
 
-		Application.LoadLevel("Talking");
+		Application.LoadLevel(nextScene);
 	}
 }
