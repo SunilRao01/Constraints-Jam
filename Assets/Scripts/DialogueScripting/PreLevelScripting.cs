@@ -58,6 +58,8 @@ public class PreLevelScripting : MonoBehaviour
 			case 9:
 				postLevelDialogueIndex = 2;
 				break;
+			case 10:
+				break;
 			default:
 				Application.LoadLevel("GameOver");
 				break;

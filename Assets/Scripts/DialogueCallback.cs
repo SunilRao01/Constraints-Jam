@@ -225,7 +225,6 @@ public class DialogueCallback : MonoBehaviour
 
 		// Update current scene
 		currentPhase++;
-		
 		PlayerPrefs.SetInt("Phase", currentPhase);
 
 		if (currentPhase != 9)
@@ -235,7 +234,7 @@ public class DialogueCallback : MonoBehaviour
 		}
 		else
 		{
-			dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Outro";
+			dialogueText.GetComponent<Dialogue>().afterDialogueNextScene = "Talking";
 		}
 
 		dialogueText.GetComponent<Dialogue>().isDialogueCallbackFunction = false;

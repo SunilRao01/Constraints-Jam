@@ -128,6 +128,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -256,6 +257,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -337,6 +339,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -465,6 +468,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -546,6 +550,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -627,6 +632,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -708,6 +714,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -789,6 +796,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -870,6 +878,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -951,6 +960,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -1032,6 +1042,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -1113,6 +1124,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -1224,6 +1236,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 0
   sequential: 0
@@ -1288,6 +1301,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -1460,6 +1474,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -1588,6 +1603,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -1669,6 +1685,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -1750,6 +1767,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -1831,6 +1849,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -1912,6 +1931,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -1993,6 +2013,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2074,6 +2095,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -2276,6 +2298,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2357,6 +2380,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2438,6 +2462,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2624,6 +2649,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2705,6 +2731,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -2859,6 +2886,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -2940,6 +2968,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -3049,6 +3078,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -3130,6 +3160,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -3211,6 +3242,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -3292,6 +3324,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -3373,6 +3406,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -3454,6 +3488,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -3535,6 +3570,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -3616,6 +3652,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -3697,6 +3734,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -3778,6 +3816,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -3859,6 +3898,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -3940,6 +3980,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -4021,6 +4062,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -4102,6 +4144,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -4183,6 +4226,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -4264,6 +4308,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -4345,6 +4390,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -4426,6 +4472,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -4507,6 +4554,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -4588,6 +4636,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -4669,6 +4718,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -4750,6 +4800,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -4831,6 +4882,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -4912,6 +4964,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -4993,6 +5046,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -5074,6 +5128,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -5155,6 +5210,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -5236,6 +5292,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -5317,6 +5374,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -5398,6 +5456,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -5479,6 +5538,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -5560,6 +5620,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -5641,6 +5702,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -5761,6 +5823,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -5842,6 +5905,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -5923,6 +5987,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -6004,6 +6069,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -6085,6 +6151,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -6166,6 +6233,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -6247,6 +6315,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -6328,6 +6397,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -6409,6 +6479,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -6521,6 +6592,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -6602,6 +6674,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -6683,6 +6756,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -6764,6 +6838,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -6845,6 +6920,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -6926,6 +7002,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -7007,6 +7084,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -7088,6 +7166,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -7169,6 +7248,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -7298,6 +7378,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -7426,6 +7507,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -7507,6 +7589,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -7588,6 +7671,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -7669,6 +7753,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -7750,6 +7835,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -7831,6 +7917,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -7912,6 +7999,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -7993,6 +8081,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -8074,6 +8163,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -8155,6 +8245,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -8236,6 +8327,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -8317,6 +8409,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -8398,6 +8491,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -8479,6 +8573,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -8639,6 +8734,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -8720,6 +8816,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -8801,6 +8898,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -8882,6 +8980,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -8963,6 +9062,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9044,6 +9144,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9125,6 +9226,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9253,6 +9355,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -9334,6 +9437,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9415,6 +9519,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -9496,6 +9601,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9624,6 +9730,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -9705,6 +9812,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -9786,6 +9894,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -9867,6 +9976,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -9948,6 +10058,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -10068,6 +10179,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -10149,6 +10261,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -10230,6 +10343,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -10311,6 +10425,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -10392,6 +10507,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -10473,6 +10589,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -10554,6 +10671,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -10635,6 +10753,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -10716,6 +10835,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -10797,6 +10917,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -10878,6 +10999,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -10959,6 +11081,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -11040,6 +11163,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -11121,6 +11245,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -11202,6 +11327,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -11283,6 +11409,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -11411,6 +11538,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -11492,6 +11620,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -11573,6 +11702,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -11654,6 +11784,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -11735,6 +11866,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -11862,6 +11994,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -11943,6 +12076,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -12024,6 +12158,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -12105,6 +12240,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -12186,6 +12322,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -12267,6 +12404,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -12348,6 +12486,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -12429,6 +12568,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -12510,6 +12650,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -12591,6 +12732,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -12659,6 +12801,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 0
   sequential: 0
@@ -12813,6 +12956,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -12894,6 +13038,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -12975,6 +13120,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -13122,6 +13268,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -13203,6 +13350,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -13284,6 +13432,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -13365,6 +13514,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -13446,6 +13596,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -13527,6 +13678,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -13638,6 +13790,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 0
   sequential: 0
@@ -13677,6 +13830,121 @@ Transform:
   - {fileID: 1595113997}
   m_Father: {fileID: 402451410}
   m_RootOrder: 0
+--- !u!1 &780512097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 780512098}
+  - 33: {fileID: 780512101}
+  - 23: {fileID: 780512100}
+  - 114: {fileID: 780512099}
+  - 114: {fileID: 780512102}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780512098
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780512097}
+  m_LocalRotation: {x: -.0114423772, y: .980546951, z: -.0601642169, w: -.186486065}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .99999994, y: .99999994, z: .999999881}
+  m_Children: []
+  m_Father: {fileID: 1124157833}
+  m_RootOrder: 0
+--- !u!114 &780512099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780512097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c11ca988cae37b4cafa8f4fe4f7d298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  render_mesh_normaly: 0
+  render_lines_1st: 0
+  render_lines_2nd: 1
+  render_lines_3rd: 0
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  ZWrite: 1
+  AWrite: 1
+  blend: 1
+  lineWidth: 33.6800003
+  lineMaterial: {fileID: 0}
+--- !u!23 &780512100
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300002, guid: 8f2158d8ce38c9345b98297646b02ffd,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780512097}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: df70bdf184b84b14aa5faf4171cd2901, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &780512101
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300002, guid: 8f2158d8ce38c9345b98297646b02ffd,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780512097}
+  m_Mesh: {fileID: 4300002, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+--- !u!114 &780512102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 780512097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93e10c637d0ca3c468b8a57b3f90accc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blendColors:
+  - {r: 0, g: .958620548, b: 1, a: 1}
+  - {r: 1, g: .514705896, b: .514705896, a: 1}
+  - {r: 1, g: .837931037, b: .308823526, a: 1}
+  - {r: 0, g: 1, b: .172413826, a: 1}
+  - {r: 1, g: .931034446, b: 0, a: 1}
+  - {r: .617646933, g: .522058845, b: 1, a: 1}
+  - {r: .558823526, g: .726166248, b: 1, a: 1}
+  colorChangeRate: .200000003
+  randomColors: 0
+  customAlpha: 0
+  customAlphaValue: 0
+  isText: 0
+  isGuiText: 0
+  isImage: 0
+  isMaterial: 0
+  isLine: 0
+  isWireframe: 1
+  introDelay: 0
+  enableBlend: 0
+  sequential: 1
+  customStart: 0
+  startRandomColors: 0
 --- !u!1 &786191352
 GameObject:
   m_ObjectHideFlags: 0
@@ -13730,6 +13998,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -13811,6 +14080,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -13892,6 +14162,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -13973,6 +14244,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -14054,6 +14326,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -14166,6 +14439,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -14247,6 +14521,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -14328,6 +14603,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -14409,6 +14685,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -14490,6 +14767,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -14571,6 +14849,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -14652,6 +14931,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -14733,6 +15013,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -14814,6 +15095,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -14942,6 +15224,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -15023,6 +15306,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -15104,6 +15388,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -15185,6 +15470,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -15266,6 +15552,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -15347,6 +15634,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -15456,6 +15744,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -15537,6 +15826,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -15618,6 +15908,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -15699,6 +15990,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -15780,6 +16072,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -15861,6 +16154,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -15942,6 +16236,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -16070,6 +16365,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -16151,6 +16447,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -16232,6 +16529,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -16313,6 +16611,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -16394,6 +16693,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -16475,6 +16775,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -16556,6 +16857,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -16637,6 +16939,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -16718,6 +17021,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -16799,6 +17103,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -16880,6 +17185,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -17099,6 +17405,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -17180,6 +17487,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -17261,6 +17569,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -17342,6 +17651,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -17423,6 +17733,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -17504,6 +17815,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -17585,6 +17897,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -17666,6 +17979,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -17747,6 +18061,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -17828,6 +18143,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -17909,6 +18225,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -17990,6 +18307,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -18099,6 +18417,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -18180,6 +18499,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -18261,6 +18581,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -18342,6 +18663,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -18423,6 +18745,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -18504,6 +18827,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -18585,6 +18909,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -18666,6 +18991,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -18747,6 +19073,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -18828,6 +19155,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -18936,6 +19264,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -18964,6 +19293,51 @@ GUIText:
     rgba: 1459617791
   m_PixelCorrect: 1
   m_RichText: 1
+--- !u!1 &1124157832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1124157833}
+  - 95: {fileID: 1124157834}
+  m_Layer: 0
+  m_Name: Goddess
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1124157833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124157832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.671940029, z: .504079998}
+  m_LocalScale: {x: 155.761917, y: 155.761795, z: 155.761795}
+  m_Children:
+  - {fileID: 780512098}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!95 &1124157834
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 8f2158d8ce38c9345b98297646b02ffd,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124157832}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 8f2158d8ce38c9345b98297646b02ffd, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1139562587
 GameObject:
   m_ObjectHideFlags: 0
@@ -19017,6 +19391,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -19098,6 +19473,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -19179,6 +19555,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -19260,6 +19637,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -19341,6 +19719,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -19422,6 +19801,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -19533,6 +19913,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 0
   sequential: 0
@@ -19597,6 +19978,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -19678,6 +20060,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -19806,6 +20189,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -19914,6 +20298,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -19995,6 +20380,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -20076,6 +20462,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -20184,6 +20571,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -20265,6 +20653,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -20346,6 +20735,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -20489,6 +20879,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -20570,6 +20961,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -20651,6 +21043,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -20850,6 +21243,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -20931,6 +21325,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -21086,6 +21481,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -21167,6 +21563,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -21248,6 +21645,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -21329,6 +21727,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -21410,6 +21809,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -21491,6 +21891,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -21572,6 +21973,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -21653,6 +22055,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -21734,6 +22137,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -21815,6 +22219,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -21896,6 +22301,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -21977,6 +22383,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -22058,6 +22465,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -22139,6 +22547,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -22267,6 +22676,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -22409,6 +22819,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -22490,6 +22901,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -22571,6 +22983,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -22652,6 +23065,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -22733,6 +23147,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -22814,6 +23229,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -22895,6 +23311,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -22976,6 +23393,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -23057,6 +23475,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -23138,6 +23557,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -23250,6 +23670,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -23331,6 +23752,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -23412,6 +23834,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -23493,6 +23916,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -23574,6 +23998,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -23655,6 +24080,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -23736,6 +24162,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -23817,6 +24244,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -23898,6 +24326,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -23979,6 +24408,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -24060,6 +24490,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -24141,6 +24572,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -24222,6 +24654,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -24303,6 +24736,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -24384,6 +24818,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -24465,6 +24900,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -24585,6 +25021,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -24666,6 +25103,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -24747,6 +25185,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -24828,6 +25267,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -24909,6 +25349,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -24990,6 +25431,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25071,6 +25513,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25179,6 +25622,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -25307,6 +25751,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25388,6 +25833,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25469,6 +25915,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -25550,6 +25997,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25631,6 +26079,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25712,6 +26161,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -25793,6 +26243,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -25874,6 +26325,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -25955,6 +26407,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -26036,6 +26489,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -26117,6 +26571,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -26198,6 +26653,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -26307,6 +26763,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -26388,6 +26845,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -26469,6 +26927,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -26550,6 +27009,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -26661,6 +27121,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 0
   sequential: 0
@@ -26725,6 +27186,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -26806,6 +27268,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -26887,6 +27350,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -26968,6 +27432,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -27049,6 +27514,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -27157,6 +27623,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -27238,6 +27705,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -27319,6 +27787,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -27400,6 +27869,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -27481,6 +27951,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -27562,6 +28033,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -27671,6 +28143,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -27752,6 +28225,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -27833,6 +28307,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -27914,6 +28389,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -27995,6 +28471,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -28076,6 +28553,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -28157,6 +28635,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -28238,6 +28717,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -28319,6 +28799,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -28400,6 +28881,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -28481,6 +28963,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -28562,6 +29045,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -28643,6 +29127,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -28809,6 +29294,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -28890,6 +29376,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -28971,6 +29458,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -29052,6 +29540,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -29133,6 +29622,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -29214,6 +29704,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -29295,6 +29786,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -29376,6 +29868,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -29487,6 +29980,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -29568,6 +30062,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -29649,6 +30144,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -29730,6 +30226,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -29811,6 +30308,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -29892,6 +30390,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -29973,6 +30472,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -30054,6 +30554,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -30135,6 +30636,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -30263,6 +30765,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -30344,6 +30847,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -30425,6 +30929,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -30506,6 +31011,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -30587,6 +31093,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -30734,6 +31241,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -30815,6 +31323,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -30896,6 +31405,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -30977,6 +31487,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -31058,6 +31569,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -31139,6 +31651,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.79999995
   enableBlend: 1
   sequential: 1
@@ -31220,6 +31733,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -31301,6 +31815,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -31382,6 +31897,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -31463,6 +31979,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -31544,6 +32061,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -31625,6 +32143,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.29999995
   enableBlend: 1
   sequential: 1
@@ -31706,6 +32225,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -31787,6 +32307,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -31868,6 +32389,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -31949,6 +32471,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -32030,6 +32553,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -32185,6 +32709,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -32266,6 +32791,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -32347,6 +32873,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -32428,6 +32955,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -32509,6 +33037,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -32590,6 +33119,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5999999
   enableBlend: 1
   sequential: 1
@@ -32671,6 +33201,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -32752,6 +33283,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -32833,6 +33365,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -32914,6 +33447,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3
   enableBlend: 1
   sequential: 1
@@ -32995,6 +33529,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.5
   enableBlend: 1
   sequential: 1
@@ -33076,6 +33611,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.20000005
   enableBlend: 1
   sequential: 1
@@ -33157,6 +33693,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -33238,6 +33775,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .200000003
   enableBlend: 1
   sequential: 1
@@ -33319,6 +33857,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -33400,6 +33939,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2
   enableBlend: 1
   sequential: 1
@@ -33481,6 +34021,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -33562,6 +34103,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -33643,6 +34185,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -33872,6 +34415,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -33980,6 +34524,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -34061,6 +34606,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -34142,6 +34688,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -34223,6 +34770,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -34304,6 +34852,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -34385,6 +34934,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 1.89999998
   enableBlend: 1
   sequential: 1
@@ -34466,6 +35016,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -34547,6 +35098,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -34628,6 +35180,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.20000005
   enableBlend: 1
   sequential: 1
@@ -34709,6 +35262,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 0
   enableBlend: 1
   sequential: 1
@@ -34851,6 +35405,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.70000005
   enableBlend: 1
   sequential: 1
@@ -35038,6 +35593,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -35119,6 +35675,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: .400000006
   enableBlend: 1
   sequential: 1
@@ -35200,6 +35757,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -35281,6 +35839,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -35362,6 +35921,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -35443,6 +36003,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.0999999
   enableBlend: 1
   sequential: 1
@@ -35524,6 +36085,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.4000001
   enableBlend: 1
   sequential: 1
@@ -35605,6 +36167,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 2.9000001
   enableBlend: 1
   sequential: 1
@@ -35733,6 +36296,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
@@ -35814,6 +36378,7 @@ MonoBehaviour:
   isImage: 0
   isMaterial: 0
   isLine: 0
+  isWireframe: 0
   introDelay: 3.0999999
   enableBlend: 1
   sequential: 1
