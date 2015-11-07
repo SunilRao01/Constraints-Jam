@@ -44,13 +44,26 @@ public class DialogueCallback : MonoBehaviour
 			{	
 				Vector3 heroineStartingPosition = heroines[preDialogueIndex].transform.position;
 				heroineStartingPosition.y += 15;
+
+				if (currentPhase == 8)
+				{
+					heroineStartingPosition.x -= 0.5f;
+				}
+
 				GameObject dialogueHeroine = (GameObject) Instantiate(heroines[preDialogueIndex], heroineStartingPosition, Quaternion.identity);
-				
-				// Move heroine down after instantiating it on top
-				iTween.MoveTo(dialogueHeroine, iTween.Hash("position", heroines[preDialogueIndex].transform.position, "time", 5.0f,
-				                                           "easetype", iTween.EaseType.linear,
-				                                           "oncompletetarget", gameObject,
-				                                           "oncomplete", "afterHeroineArrival"));
+
+				if (currentPhase != 8)
+				{
+					// Move heroine down after instantiating it on top
+					iTween.MoveTo(dialogueHeroine, iTween.Hash("position", heroines[preDialogueIndex].transform.position, "time", 5.0f,
+					                                           "easetype", iTween.EaseType.linear,
+					                                           "oncompletetarget", gameObject,
+					                                           "oncomplete", "afterHeroineArrival"));
+				}
+				else
+				{
+					StartCoroutine(waitThenHeroineTalk());
+				}
 			}
 			else
 			{
@@ -65,11 +78,8 @@ public class DialogueCallback : MonoBehaviour
 				case 5:
 					targetPosition.y -= 3;
 					break;
-				case 8:
-					//nextLevelNum = 3;
-					break;
-				default:
-					//nextLevelNum = 1;
+				case 8: // TODO: Figure out third heroine entrance
+					targetPosition.x += 2;
 					break;
 				}
 
@@ -114,11 +124,35 @@ public class DialogueCallback : MonoBehaviour
 			// Move Heroine back up
 			Vector3 targetHeroinePosition = currentHeroine.transform.position;
 			targetHeroinePosition.y += 10;
-			iTween.MoveTo(currentHeroine, iTween.Hash("position", targetHeroinePosition, "time", 5.0f,
-			                                           "easetype", iTween.EaseType.linear,
-			                                           "oncompletetarget", gameObject,
-			                                           "oncomplete", "afterHeroineLeaves"));
+
+			if (currentPhase != 9)
+			{
+				iTween.MoveTo(currentHeroine, iTween.Hash("position", targetHeroinePosition, "time", 5.0f,
+				                                           "easetype", iTween.EaseType.linear,
+				                                           "oncompletetarget", gameObject,
+				                                           "oncomplete", "afterHeroineLeaves"));
+			}
+			else
+			{
+				currentHeroine.transform.GetChild(0).GetComponent<Rigidbody2D>().AddForce(Vector2.up * 1000);
+				StartCoroutine(waitThenHeroineKill());
+			}
 		}
+	}
+
+	IEnumerator waitThenHeroineTalk()
+	{
+		yield return new WaitForSeconds(3);
+
+		afterHeroineArrival();
+	}
+
+	IEnumerator waitThenHeroineKill()
+	{
+		yield return new WaitForSeconds(2);
+
+		Destroy (currentHeroine);
+		afterHeroineLeaves();
 	}
 
 	void afterHeroineArrival()
@@ -139,7 +173,8 @@ public class DialogueCallback : MonoBehaviour
 			case 5:
 				targetPosition.y += 3;
 				break;
-			case 8:
+			case 8: // TODO: Figure out third heroine entrance
+				targetPosition.x -= 2;
 				break;
 		}
 		
@@ -159,9 +194,19 @@ public class DialogueCallback : MonoBehaviour
 
 	void afterHeroineLeaves()
 	{
+		int currentPhase = PlayerPrefs.GetInt("Phase");
+
 		// Move dialogue box down
 		Vector3 targetPosition = dialogueBox.transform.parent.position;
-		targetPosition.y -= 5;
+
+		if (currentPhase != 9)
+		{
+			targetPosition.y -= 5;
+		}
+		else
+		{
+			targetPosition.y -= 1;
+		}
 
 		
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
@@ -179,7 +224,6 @@ public class DialogueCallback : MonoBehaviour
 		}
 
 		// Update current scene
-		int currentPhase = PlayerPrefs.GetInt("Phase");
 		currentPhase++;
 		
 		PlayerPrefs.SetInt("Phase", currentPhase);

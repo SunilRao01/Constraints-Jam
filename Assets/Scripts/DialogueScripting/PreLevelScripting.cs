@@ -110,7 +110,16 @@ public class PreLevelScripting : MonoBehaviour
 
 			// Set dialogue box position to heroine's
 			Vector3 startingDialoguePosition = dialogueBox.transform.parent.position;
-			startingDialoguePosition.y += 5;
+
+			if (currentPhase != 9)
+			{
+				startingDialoguePosition.y += 5;
+			}
+			else
+			{
+				startingDialoguePosition.y += 1;
+			}
+
 			dialogueBox.transform.parent.position = startingDialoguePosition;
 			
 			// iTween scale dialogue box
@@ -179,7 +188,7 @@ public class PreLevelScripting : MonoBehaviour
 		}
 		else if (currentPhase % 3 == 0)
 		{
-			// TODO: Get dialogue from CORRECT heroine
+			// Get dialogue from  heroine
 			for (int i = 0; i < heroines[postLevelDialogueIndex].GetComponent<HeroineDialogue>().postFightDialogue.Count; i++)
 			{
 				dialogueText.GetComponent<Dialogue>().dialogueList.Add(heroines[postLevelDialogueIndex].GetComponent<HeroineDialogue>().postFightDialogue[i]);
