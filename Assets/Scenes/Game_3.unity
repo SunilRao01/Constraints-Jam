@@ -33148,6 +33148,8 @@ GameObject:
   - 92: {fileID: 1983657781}
   - 124: {fileID: 1983657780}
   - 81: {fileID: 1983657779}
+  - 114: {fileID: 1983657784}
+  - 114: {fileID: 1983657785}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -33220,6 +33222,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1983657784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983657778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedd078ba44a53a42b92e30dcf7c453b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 4f502b04e84e72b49979481d00b85253, type: 3}
+  fade: 1
+  alphaSpeed: .0500000007
+  deleteFade: 0
+  introDelaySeconds: 0
+--- !u!114 &1983657785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983657778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75c8556ead9db648982efe26760a42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 4f502b04e84e72b49979481d00b85253, type: 3}
+  fade: 0
+  alpha: 0
+  alphaSpeed: .00999999978
+  nextScene: Talking
 --- !u!1 &2000668545
 GameObject:
   m_ObjectHideFlags: 0

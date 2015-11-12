@@ -86,7 +86,7 @@ public class PlayerIntro : MonoBehaviour
 
 		// Load scene after intro
 		PlayerPrefs.SetInt("Phase", 0);
-		Application.LoadLevel("Talking");
+		Camera.main.GetComponent<FadeOut>().fade = true;
 	}
 
 	IEnumerator rotatingCube()

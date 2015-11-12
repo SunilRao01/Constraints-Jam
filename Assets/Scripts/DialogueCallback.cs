@@ -78,7 +78,7 @@ public class DialogueCallback : MonoBehaviour
 				case 5:
 					targetPosition.y -= 3;
 					break;
-				case 8: // TODO: Figure out third heroine entrance
+				case 8: 
 					targetPosition.x += 2;
 					break;
 				}
@@ -173,7 +173,7 @@ public class DialogueCallback : MonoBehaviour
 			case 5:
 				targetPosition.y += 3;
 				break;
-			case 8: // TODO: Figure out third heroine entrance
+			case 8: 
 				targetPosition.x -= 2;
 				break;
 		}

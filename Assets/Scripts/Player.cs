@@ -24,15 +24,12 @@ public class Player : MonoBehaviour
 	private bool rotate;
 	private Vector3 rotationDirection;
 	public float rotationSpeed;
-
-	// TODO: Fix player janky ass jumping
-
+	
 	void Awake () 
 	{
 		// Retrive relevant variables
 		rigidbody = GetComponent<Rigidbody2D>();
 
-		// TODO: Spawn number of hearts depending on current phase
 		int currentPhase = PlayerPrefs.GetInt("Phase");
 
 		hearts = new List<GameObject>();

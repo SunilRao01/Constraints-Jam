@@ -82,7 +82,8 @@ public class Dialogue : MonoBehaviour
 		}
 		else if (afterDialogueNextScene != "")
 		{
-			Application.LoadLevel(afterDialogueNextScene);
+			Camera.main.GetComponent<FadeOut>().nextScene = afterDialogueNextScene;
+			Camera.main.GetComponent<FadeOut>().fade = true;
 		}
 	}
 }
