@@ -17,8 +17,8 @@ public class Player : MonoBehaviour
 	public float healingInterval;
 
 	[Header("Player Stats")]
-	public Text healthLabel;
-	public List<GameObject> hearts;
+	public GameObject heartPrefab;
+	private List<GameObject> hearts;
 	private int heartIndex;
 
 	private bool rotate;
@@ -32,7 +32,37 @@ public class Player : MonoBehaviour
 		// Retrive relevant variables
 		rigidbody = GetComponent<Rigidbody2D>();
 
+		// TODO: Spawn number of hearts depending on current phase
+		int currentPhase = PlayerPrefs.GetInt("Phase");
+
+		hearts = new List<GameObject>();
+		int numOfHearts = 0;
+		if (currentPhase < 3)
+		{
+			numOfHearts = 3;
+		}
+		else if (currentPhase < 6)
+		{
+			numOfHearts = 4;
+		}
+		else if (currentPhase < 9)
+		{
+			numOfHearts = 5;
+		}
+
+		for (int i = 0; i < numOfHearts; i++)
+		{
+			Vector3 heartPosition = heartPrefab.transform.position;
+			heartPosition.x += (1.4f * i);
+			
+			Vector3 heartRotation = heartPrefab.transform.rotation.eulerAngles;
+			heartRotation.y += 180;
+			
+			GameObject currentHeart = (GameObject) Instantiate(heartPrefab, heartPosition, Quaternion.Euler(heartRotation));
+			hearts.Add(currentHeart);
+		}
 		heartIndex = hearts.Count;
+		Debug.Log("Done adding hearts! Heart count: " + hearts.Count);
 	}
 	
 	void Update () 
@@ -62,16 +92,22 @@ public class Player : MonoBehaviour
 
 	void damage()
 	{
-		heartIndex--;
-
-		if (heartIndex == 0)
+		if (heartIndex == 1)
 		{
 			Application.LoadLevel("GameOver");
 		}
+		else if (heartIndex != hearts.Count)
+		{
+			Color changeLineColor = hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor;
+			changeLineColor.a = 0;
+			hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor = changeLineColor;
+		}
 
-		Color newLineColor = hearts[heartIndex].GetComponent<Wireframe>().lineColor;
+		heartIndex--;
+		Debug.Log("Heart Index: " + heartIndex);
+		Color newLineColor = hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor;
 		newLineColor.a = 0;
-		hearts[heartIndex].GetComponent<Wireframe>().lineColor = newLineColor;
+		hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor = newLineColor;
 		
 
 		if (!healing)
@@ -90,11 +126,11 @@ public class Player : MonoBehaviour
 
 			if (hearts[heartIndex])
 			{
-				Color newLineColor = hearts[heartIndex].GetComponent<Wireframe>().lineColor;
+				Color newLineColor = hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor;
 				newLineColor.a += 0.08f;
-				hearts[heartIndex].GetComponent<Wireframe>().lineColor = newLineColor;
+				hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor = newLineColor;
 
-				if (hearts[heartIndex].GetComponent<Wireframe>().lineColor.a >= 1)
+				if (hearts[heartIndex].transform.GetChild(1).GetComponent<Wireframe>().lineColor.a >= 1)
 				{
 					heartIndex++;
 				}
