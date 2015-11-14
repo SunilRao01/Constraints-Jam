@@ -10,6 +10,8 @@ public class EnemyASCIISpawner : MonoBehaviour
 
 	private GameObject asciiParent;
 
+	public float spawnIntervalScaling;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -40,6 +42,8 @@ public class EnemyASCIISpawner : MonoBehaviour
 			asciiShootPosition.Normalize();
 			asciiShootPosition *= asciiForce;
 			ascii.GetComponent<Rigidbody2D>().AddForce(asciiShootPosition);
+
+			spawnInterval -= spawnIntervalScaling;
 		}
 	}
 }

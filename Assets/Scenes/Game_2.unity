@@ -5035,6 +5035,7 @@ MonoBehaviour:
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
   spawnInterval: 2
   asciiForce: 100
+  spawnIntervalScaling: 0
 --- !u!1 &315105893
 GameObject:
   m_ObjectHideFlags: 0
@@ -13966,6 +13967,7 @@ MonoBehaviour:
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
   spawnInterval: 2
   asciiForce: 100
+  spawnIntervalScaling: 0
 --- !u!4 &844131712
 Transform:
   m_ObjectHideFlags: 0
@@ -22242,6 +22244,7 @@ MonoBehaviour:
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
   spawnInterval: 2
   asciiForce: 100
+  spawnIntervalScaling: 0
 --- !u!1 &1373000892
 GameObject:
   m_ObjectHideFlags: 0
@@ -33244,7 +33247,7 @@ MonoBehaviour:
   fadeTexture: {fileID: 2800000, guid: 4f502b04e84e72b49979481d00b85253, type: 3}
   fade: 0
   alpha: 0
-  alphaSpeed: .00999999978
+  alphaSpeed: .0500000007
   nextScene: Talking
 --- !u!1 &2000668545
 GameObject:

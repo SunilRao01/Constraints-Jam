@@ -212,11 +212,14 @@ public class DialogueCallback : MonoBehaviour
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 		                                                                   "easetype", iTween.EaseType.linear));
 
+		// TODO: Instantiate a new heart and wait until fully done appearing to start 
+		// player's response
+
+
 		// Start player's ending dialogue
 		int postLevelDialogueIndex = GetComponent<PreLevelScripting>().postLevelDialogueIndex;
 		string[] currentDialogues = GetComponent<PreLevelScripting>().postLevelPlayerDialogue[postLevelDialogueIndex].Split(new char[]{'|'});
 
-		// THIS MAY BE A PROBLEM, FUCK IF I KNOW
 		dialogueText.GetComponent<Dialogue>().dialogueList.Clear();
 		for (int i = 0; i < currentDialogues.Length; i++)
 		{
