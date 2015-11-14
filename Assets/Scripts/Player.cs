@@ -24,7 +24,9 @@ public class Player : MonoBehaviour
 	private bool rotate;
 	private Vector3 rotationDirection;
 	public float rotationSpeed;
-	
+	public bool lockMovement;
+	public int numOfHearts;
+
 	void Awake () 
 	{
 		// Retrive relevant variables
@@ -33,7 +35,7 @@ public class Player : MonoBehaviour
 		int currentPhase = PlayerPrefs.GetInt("Phase");
 
 		hearts = new List<GameObject>();
-		int numOfHearts = 0;
+		numOfHearts = 0;
 		if (currentPhase < 3)
 		{
 			numOfHearts = 3;
@@ -61,29 +63,37 @@ public class Player : MonoBehaviour
 		heartIndex = hearts.Count;
 		Debug.Log("Done adding hearts! Heart count: " + hearts.Count);
 	}
-	
+
+	public List<GameObject> getHearts()
+	{
+		return hearts;
+	}
+
 	void Update () 
 	{
-		Vector2 movementDirection = new Vector2();
-		movementDirection.x = Input.GetAxisRaw("Horizontal");
-		movementDirection.y = 0;
-		movementDirection.Normalize();
-		movementDirection *= movementForce;
-
-		if (rigidbody.velocity.magnitude < maximumVelocity)
+		if (!lockMovement)
 		{
-			rigidbody.AddForce(movementDirection);
-		}
+			Vector2 movementDirection = new Vector2();
+			movementDirection.x = Input.GetAxisRaw("Horizontal");
+			movementDirection.y = 0;
+			movementDirection.Normalize();
+			movementDirection *= movementForce;
 
-		if (Input.GetKeyDown(KeyCode.Space) && onAxis)
-		{
-			movementDirection.y += jumpForce;
-			rigidbody.AddForce(movementDirection);
-		}
+			if (rigidbody.velocity.magnitude < maximumVelocity)
+			{
+				rigidbody.AddForce(movementDirection);
+			}
 
-		if (rotate)
-		{
-			transform.Rotate(rotationDirection * rotationSpeed);
+			if (Input.GetKeyDown(KeyCode.Space) && onAxis)
+			{
+				movementDirection.y += jumpForce;
+				rigidbody.AddForce(movementDirection);
+			}
+
+			if (rotate)
+			{
+				transform.Rotate(rotationDirection * rotationSpeed);
+			}
 		}
 	}
 
@@ -110,6 +120,25 @@ public class Player : MonoBehaviour
 		if (!healing)
 		{
 			StartCoroutine(healingHeart());
+		}
+	}
+
+	public void makeNewHeartVisible()
+	{
+		Debug.Log("Making new heart visible!");
+		StartCoroutine(newHeart());
+	}
+
+	IEnumerator newHeart()
+	{
+		while (hearts[numOfHearts-1].transform.GetChild(1).GetComponent<Wireframe>().lineColor.a < 1)
+		{
+			Color newHeartColor = hearts[numOfHearts-1].transform.GetChild(1).GetComponent<Wireframe>().lineColor;
+			newHeartColor.a += 0.1f;
+
+			hearts[numOfHearts-1].transform.GetChild(1).GetComponent<Wireframe>().lineColor = newHeartColor;
+
+			yield return new WaitForSeconds(0.1f);
 		}
 	}
 

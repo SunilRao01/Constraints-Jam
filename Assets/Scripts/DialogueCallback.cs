@@ -14,15 +14,24 @@ public class DialogueCallback : MonoBehaviour
 
 	private bool waitForInput;
 	private int currentPhase;
+	private GameObject playerObject;
 	public GameObject currentHeroine;
 
 	void Start()
 	{
 		currentPhase = PlayerPrefs.GetInt("Phase");
 
+		playerObject = GameObject.FindGameObjectWithTag("Player");
 		mainBlanket = GameObject.FindGameObjectWithTag("Blanket").GetComponent<Blanket>();
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Dialogue>();
 		dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+
+		// Make new player's heart invisible until function is called after heroine leaves
+		int numOfHearts = playerObject.GetComponent<Player>().numOfHearts;
+
+		Color heartInvisibleColor = playerObject.GetComponent<Player>().getHearts()[numOfHearts-1].transform.GetChild(1).GetComponent<Wireframe>().lineColor;
+		heartInvisibleColor.a = 0;
+		playerObject.GetComponent<Player>().getHearts()[numOfHearts-1].transform.GetChild(1).GetComponent<Wireframe>().lineColor = heartInvisibleColor;
 	}
 
 	public void dialogueCallback()
@@ -212,9 +221,8 @@ public class DialogueCallback : MonoBehaviour
 		iTween.MoveTo(dialogueBox.transform.parent.gameObject, iTween.Hash("position", targetPosition, "time", 0.5f,
 		                                                                   "easetype", iTween.EaseType.linear));
 
-		// TODO: Instantiate a new heart and wait until fully done appearing to start 
-		// player's response
-
+		// Add heart to player
+		playerObject.GetComponent<Player>().makeNewHeartVisible();
 
 		// Start player's ending dialogue
 		int postLevelDialogueIndex = GetComponent<PreLevelScripting>().postLevelDialogueIndex;

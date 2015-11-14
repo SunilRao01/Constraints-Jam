@@ -132,6 +132,7 @@ public class PreLevelScripting : MonoBehaviour
 			                                        "oncomplete", "afterDialogueScale"));
 		}
 
+
 	}
 
 	IEnumerator rotatePlayer()
