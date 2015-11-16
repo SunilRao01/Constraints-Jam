@@ -23,6 +23,9 @@ public class Heroine : MonoBehaviour
 
 	public float phase3JumpForce;
 
+	// TODO: Add 'starter' function to have contorl to 'start' and 'stop' shooting
+	// (This is for he new word intros during levels)
+
 	// Use this for initialization
 	void Start () 
 	{
