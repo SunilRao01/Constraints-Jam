@@ -31329,7 +31329,7 @@ MonoBehaviour:
   - HELP
   - WORTH
   - HOPE
-  letterDistance: 40
+  letterDistance: 100
 --- !u!1 &1863982188
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,7 +56,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
-  spawnInterval: 2
+  minSpawnInterval: 2
+  maxSpawnInterval: 5
   asciiForce: 100
   spawnIntervalScaling: .00100000005
 --- !u!222 &22235760

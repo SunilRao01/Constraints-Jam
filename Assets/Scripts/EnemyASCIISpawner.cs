@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class EnemyASCIISpawner : MonoBehaviour 
 {
 	public GameObject asciiPrefab;
-	public float spawnInterval;
+	public float minSpawnInterval;
+	public float maxSpawnInterval;
 	public float asciiForce;
 
 	private GameObject asciiParent;
@@ -25,7 +26,7 @@ public class EnemyASCIISpawner : MonoBehaviour
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(spawnInterval);
+			yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpawnInterval));
 
 			GameObject ascii = (GameObject) Instantiate(asciiPrefab, transform.position, Quaternion.identity);
 			ascii.GetComponent<Text>().text = "" + chosenLetter; 
@@ -38,7 +39,8 @@ public class EnemyASCIISpawner : MonoBehaviour
 			asciiShootPosition *= asciiForce;
 			ascii.GetComponent<Rigidbody2D>().AddForce(asciiShootPosition);
 
-			spawnInterval -= spawnIntervalScaling;
+			minSpawnInterval -= spawnIntervalScaling;
+			maxSpawnInterval -= spawnIntervalScaling;
 		}
 	}
 }
