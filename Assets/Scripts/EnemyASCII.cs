@@ -11,9 +11,13 @@ public class EnemyASCII : MonoBehaviour
 
 	private int currentPhase = 1;
 	public float letterDistance;
+	private Timer timer;
+	private HeroineBody heroineBody;
 
 	void Start () 
 	{
+		heroineBody = GameObject.FindGameObjectWithTag("Heroine").transform.GetChild(0).GetComponent<HeroineBody>();
+		timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>();
 		wordText = new List<GameObject>();
 
 		string firstWord = words[currentPhase-1];
@@ -79,14 +83,46 @@ public class EnemyASCII : MonoBehaviour
 
 			// Add letter to list
 			wordText.Add(currentLetter);
-
-
 		}
+
+		StartCoroutine(newWord());
 	}
 	
-	void Update () 
+	public void startShooting()
 	{
-	
+		for (int i = 0; i < wordText.Count; i++)
+		{
+			StartCoroutine(wordText[i].GetComponent<EnemyASCIISpawner>().waitThenSpawn());
+			
+		}
+	}
+
+	IEnumerator newWord()
+	{
+		// TODO: Stop heroine movement
+		// TODO: Stop enemy spawning
+		// TODO: Stop timer
+		// TODO: Update wordText list with next word
+
+		// Enable flashing colors
+		foreach (GameObject g in wordText)
+		{
+			g.GetComponent<BlendColors>().enabled = true;
+		}
+
+		yield return new WaitForSeconds(5.0f);
+
+		foreach (GameObject g in wordText)
+		{
+			g.GetComponent<BlendColors>().enabled = false;
+		}
+
+		timer.startTimer();
+
+		// TODO: Start heroine movement
+		heroineBody.startMovement();
+
+		startShooting();
 	}
 
 	public void changePhase()

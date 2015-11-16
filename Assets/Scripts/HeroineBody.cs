@@ -10,24 +10,41 @@ public class HeroineBody : MonoBehaviour
 	public bool stage_2;
 	public bool stage_3;
 
-	// Use this for initialization
-	void Start () 
-	{
-		// Start heroine AI
-		StartCoroutine(movementAI());
-	}
+	private bool starting = false;
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (stage_1)
+		if (starting)
 		{
-			transform.Rotate(Vector2.up * 0.1f);
+			if (stage_1)
+			{
+				transform.Rotate(Vector2.up * 0.1f);
+			}
+			else
+			{
+				StartCoroutine(movementAI());
+				starting = false;
+			}
 		}
+	}
+
+	public void startMovement()
+	{
+		starting = true;
+		StartCoroutine(movementAI());
+	}
+
+	public void stopMovement()
+	{
+		starting = false;
+		StopCoroutine(movementAI());
 	}
 
 	IEnumerator movementAI()
 	{
+		Debug.Log("Starting heroine movement AI");
+
 		while (true)
 		{
 			yield return new WaitForSeconds(0.01f);

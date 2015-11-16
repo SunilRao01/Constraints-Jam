@@ -18,16 +18,13 @@ public class EnemyASCIISpawner : MonoBehaviour
 	void Start () 
 	{
 		asciiParent = GameObject.Find("WorldCanvas");
-		StartCoroutine(waitThenSpawn());
 		chosenLetter = GetComponent<Text>().text.ToCharArray()[0];
 	}
 
-	IEnumerator waitThenSpawn()
+	public IEnumerator waitThenSpawn()
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpawnInterval));
-
 			GameObject ascii = (GameObject) Instantiate(asciiPrefab, transform.position, Quaternion.identity);
 			ascii.GetComponent<Text>().text = "" + chosenLetter; 
 			ascii.transform.SetParent(asciiParent.transform);
@@ -41,6 +38,8 @@ public class EnemyASCIISpawner : MonoBehaviour
 
 			minSpawnInterval -= spawnIntervalScaling;
 			maxSpawnInterval -= spawnIntervalScaling;
+
+			yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpawnInterval));
 		}
 	}
 }

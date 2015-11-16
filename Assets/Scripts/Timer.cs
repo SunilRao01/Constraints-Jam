@@ -6,36 +6,45 @@ public class Timer : MonoBehaviour
 {
 	private float timer = 15;
 	private bool fading = false;
+	private bool startingTimer = false;
 
 	void Awake()
 	{
 		int currentPhase = PlayerPrefs.GetInt("Phase");
-
+		GetComponent<Text>().text = timer.ToString("F1");
 		Debug.Log("Current phase: " + currentPhase.ToString());
+	}
+
+	public void startTimer()
+	{
+		startingTimer = true;
 	}
 
 	void Update () 
 	{
-		timer -= Time.deltaTime;
-
-		if (timer > 0)
+		if (startingTimer)
 		{
-			GetComponent<Text>().text = timer.ToString("F1");
+			timer -= Time.deltaTime;
 
-		}
-		else
-		{
-			if (!fading)
+			if (timer > 0)
 			{
-				// Update current phase
-				int currentPhase = PlayerPrefs.GetInt("Phase");
-				currentPhase++;
+				GetComponent<Text>().text = timer.ToString("F1");
 
-				PlayerPrefs.SetInt("Phase", currentPhase);
-				fading = true;
 			}
+			else
+			{
+				if (!fading)
+				{
+					// Update current phase
+					int currentPhase = PlayerPrefs.GetInt("Phase");
+					currentPhase++;
 
-			Camera.main.GetComponent<FadeOut>().fade = true;
+					PlayerPrefs.SetInt("Phase", currentPhase);
+					fading = true;
+				}
+
+				Camera.main.GetComponent<FadeOut>().fade = true;
+			}
 		}
 	}
 }

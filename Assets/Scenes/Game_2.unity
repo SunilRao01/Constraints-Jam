@@ -5033,7 +5033,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
-  spawnInterval: 2
+  minSpawnInterval: 0
+  maxSpawnInterval: 0
   asciiForce: 100
   spawnIntervalScaling: 0
 --- !u!1 &315105893
@@ -13965,7 +13966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
-  spawnInterval: 2
+  minSpawnInterval: 0
+  maxSpawnInterval: 0
   asciiForce: 100
   spawnIntervalScaling: 0
 --- !u!4 &844131712
@@ -21432,7 +21434,7 @@ GameObject:
   - 114: {fileID: 1333859953}
   m_Layer: 5
   m_Name: Timer
-  m_TagString: Untagged
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22242,7 +22244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asciiPrefab: {fileID: 134344, guid: c09b924a2ca4aeb4b9042296e8de1255, type: 2}
-  spawnInterval: 2
+  minSpawnInterval: 0
+  maxSpawnInterval: 0
   asciiForce: 100
   spawnIntervalScaling: 0
 --- !u!1 &1373000892
