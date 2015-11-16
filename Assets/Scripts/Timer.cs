@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour 
 {
-	private float timer = 10;
+	private float timer = 15;
 	private bool fading = false;
 
 	void Awake()

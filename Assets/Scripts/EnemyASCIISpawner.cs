@@ -11,18 +11,14 @@ public class EnemyASCIISpawner : MonoBehaviour
 	private GameObject asciiParent;
 
 	public float spawnIntervalScaling;
+	private char chosenLetter;
 
 	// Use this for initialization
 	void Start () 
 	{
 		asciiParent = GameObject.Find("WorldCanvas");
 		StartCoroutine(waitThenSpawn());
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
+		chosenLetter = GetComponent<Text>().text.ToCharArray()[0];
 	}
 
 	IEnumerator waitThenSpawn()
@@ -32,8 +28,7 @@ public class EnemyASCIISpawner : MonoBehaviour
 			yield return new WaitForSeconds(spawnInterval);
 
 			GameObject ascii = (GameObject) Instantiate(asciiPrefab, transform.position, Quaternion.identity);
-			string possibleCharacters = "qwertyuiopasdfghjkl;zxcvbnm,.!@#$$%^&*()-+=";
-			ascii.GetComponent<Text>().text = "" + possibleCharacters[Random.Range(0, possibleCharacters.Length-1)]; 
+			ascii.GetComponent<Text>().text = "" + chosenLetter; 
 			ascii.transform.SetParent(asciiParent.transform);
 			ascii.transform.localScale = new Vector3(1, 1, 1);
 
