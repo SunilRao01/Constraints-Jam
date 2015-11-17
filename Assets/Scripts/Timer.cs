@@ -4,9 +4,10 @@ using System.Collections;
 
 public class Timer : MonoBehaviour 
 {
-	private float timer = 15;
+	public float timer = 15;
+	public float originalTime = 15;
 	private bool fading = false;
-	private bool startingTimer = false;
+	private bool timing = true;
 
 	void Awake()
 	{
@@ -15,36 +16,43 @@ public class Timer : MonoBehaviour
 		Debug.Log("Current phase: " + currentPhase.ToString());
 	}
 
-	public void startTimer()
+	public void pause()
 	{
-		startingTimer = true;
+		timing = false;
+	}
+
+	public void resume()
+	{
+		timing = true;
 	}
 
 	void Update () 
 	{
-		if (startingTimer)
+
+		if (timing)
 		{
 			timer -= Time.deltaTime;
-
-			if (timer > 0)
-			{
-				GetComponent<Text>().text = timer.ToString("F1");
-
-			}
-			else
-			{
-				if (!fading)
-				{
-					// Update current phase
-					int currentPhase = PlayerPrefs.GetInt("Phase");
-					currentPhase++;
-
-					PlayerPrefs.SetInt("Phase", currentPhase);
-					fading = true;
-				}
-
-				Camera.main.GetComponent<FadeOut>().fade = true;
-			}
 		}
+
+		if (timer > 0)
+		{
+			GetComponent<Text>().text = timer.ToString("F1");
+
+		}
+		else
+		{
+			if (!fading)
+			{
+				// Update current phase
+				int currentPhase = PlayerPrefs.GetInt("Phase");
+				currentPhase++;
+
+				PlayerPrefs.SetInt("Phase", currentPhase);
+				fading = true;
+			}
+
+			Camera.main.GetComponent<FadeOut>().fade = true;
+		}
+
 	}
 }
