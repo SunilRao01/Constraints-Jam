@@ -4,8 +4,8 @@ using System.Collections;
 
 public class Timer : MonoBehaviour 
 {
-	public float timer = 15;
-	public float originalTime = 15;
+	public float timer = 15.0f;
+	public float previousTime = 15.0f;
 	private bool fading = false;
 	private bool timing = true;
 
@@ -28,7 +28,6 @@ public class Timer : MonoBehaviour
 
 	void Update () 
 	{
-
 		if (timing)
 		{
 			timer -= Time.deltaTime;

@@ -13,6 +13,7 @@ public class EnemyASCIISpawner : MonoBehaviour
 
 	public float spawnIntervalScaling;
 	private char chosenLetter;
+	private bool spawning = true;
 
 	// Use this for initialization
 	void Start () 
@@ -21,9 +22,14 @@ public class EnemyASCIISpawner : MonoBehaviour
 		chosenLetter = GetComponent<Text>().text.ToCharArray()[0];
 	}
 
+	public void stopSpawn()
+	{
+		spawning = false;
+	}
+
 	public IEnumerator waitThenSpawn()
 	{
-		while (true)
+		while (spawning)
 		{
 			GameObject ascii = (GameObject) Instantiate(asciiPrefab, transform.position, Quaternion.identity);
 			ascii.GetComponent<Text>().text = "" + chosenLetter; 

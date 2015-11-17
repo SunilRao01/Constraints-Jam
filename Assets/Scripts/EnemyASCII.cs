@@ -13,7 +13,7 @@ public class EnemyASCII : MonoBehaviour
 	public float letterDistance;
 	private Timer timer;
 	private HeroineBody heroineBody;
-	private int timerDividend;
+	private float timerDividend;
 	private bool addingWord;
 	private int wordIndex = -1;
 
@@ -22,7 +22,7 @@ public class EnemyASCII : MonoBehaviour
 		heroineBody = GameObject.FindGameObjectWithTag("Heroine").transform.GetChild(0).GetComponent<HeroineBody>();
 		timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>();
 		wordText = new List<GameObject>();
-		timerDividend = ((int)timer.timer) / 3;
+		timerDividend = timer.timer / 3.0f;
 
 		Debug.Log("Timer divident: " + timerDividend.ToString());
 
@@ -31,10 +31,10 @@ public class EnemyASCII : MonoBehaviour
 
 	void Update()
 	{
-		if (timer.timer < timer.originalTime && (int)timer.timer % timerDividend == 0 && !addingWord)
+		if (timer.timer < timer.previousTime && timer.timer % timerDividend <= 0.1f 
+		    && !addingWord && wordIndex < (words.Count-1))
 		{
 			Debug.Log("New word!");
-			Debug.Log("(int) timer: " + (int)timer.timer);
 
 			addingWord = true;
 			StartCoroutine(newWord());
@@ -53,7 +53,7 @@ public class EnemyASCII : MonoBehaviour
 	{
 		for (int i = 0; i < wordText.Count; i++)
 		{
-			StopCoroutine(wordText[i].GetComponent<EnemyASCIISpawner>().waitThenSpawn());
+			wordText[i].GetComponent<EnemyASCIISpawner>().stopSpawn();
 		}
 	}
 
@@ -148,13 +148,16 @@ public class EnemyASCII : MonoBehaviour
 			g.GetComponent<BlendColors>().enabled = true;
 		}
 
+		////////////////////////////////////////////////////////////////
 		yield return new WaitForSeconds(5.0f);
+		////////////////////////////////////////////////////////////////
 
 		foreach (GameObject g in wordText)
 		{
 			g.GetComponent<BlendColors>().enabled = false;
 		}
 
+		timer.previousTime = timer.timer;
 		timer.resume();
 
 		// TODO: Start heroine movement
@@ -162,6 +165,7 @@ public class EnemyASCII : MonoBehaviour
 
 		startShooting();
 
+		timer.timer -= 0.1f;
 		addingWord = false;
 	}
 
