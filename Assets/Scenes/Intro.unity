@@ -34812,7 +34812,7 @@ MonoBehaviour:
   fade: 0
   alpha: 0
   alphaSpeed: .00999999978
-  nextScene: Dodge_1
+  nextScene: Talking
 --- !u!1 &930982634
 GameObject:
   m_ObjectHideFlags: 0
